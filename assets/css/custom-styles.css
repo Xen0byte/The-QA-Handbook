@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:target::before {
+  /* Prevents Targets From Being Overlapped By The Navbar After Using The Drop-Down Links To Scroll */
+  content: "";
+  display: block;
+  height: 60px; /* Fixed Navbar Height */
+  margin: -60px 0 0; /* Negative Fixed Navbar Height */
+}
+
+#title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+ul.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header {
+  background-color: #f8f8f8;
+}
+
+.card-header:hover {
+  background-color: #f0f0f0;
+}
+
+label.btn {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+#footer-logo {
+  height: 50px;
+  background-color: white;
+}
+
+#footer-text {
+  float: right;
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+#filler {
+  background-color: white;
+}
