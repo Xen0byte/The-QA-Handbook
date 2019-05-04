@@ -1,5 +1,3 @@
-<!-- TODO: add p tags to all orphan text, such as list items -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -67,11 +65,11 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Dropdown Link</a>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Change Log</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another Action</a>
-                <a class="dropdown-item" href="#">Something Else Here</a>
+                <a class="dropdown-item" href="#6.3">v1.2</a>
+                <a class="dropdown-item" href="#6.2">v1.1</a>
+                <a class="dropdown-item" href="#6.1">v1.0</a>
               </div>
             </li>
           </ul>
@@ -92,7 +90,57 @@
         <li>
           <h2>Application</h2>
           <ul>
-            <li id="1.1"><h3>System Requirements</h3></li>
+            <li id="1.1">
+              <h3>System Requirements</h3>
+              <ul>
+                <li>Internet Connection</li>
+                <ul>
+                  <li>ADSL 8.0 MB/s Or Better</li>
+                </ul>
+                <li>Operating System</li>
+                <ul>
+                  <li>Current Major Version &amp; Previous Major Version</li>
+                  <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.13 High Sierra</a>, <a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.14 Mojave</a></li>
+                  </ul>
+                </ul>
+                <li>Browser (Core Application)</li>
+                <ul>
+                  <li>Current Major Version &amp; Previous Major Version</li>
+                  <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
+                  </ul>
+                </ul>
+                <li>Browser (Patient\OH Portal)</li>
+                <ul>
+                  <li>Current Major Version &amp; Previous Major Version</li>
+                  <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
+                  </ul>
+                  <li>Current Major Version Only</li>
+                  <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Safari_version_history">MacOS Safari</a></li>
+                  </ul>
+                </ul>
+                <li>WebDAV</li>
+                <ul>
+                  <li>
+                    <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2016</a>, <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2019</a>,
+                    <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 365</a>
+                  </li>
+                </ul>
+                <li>Document Manager</li>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
+                </ul>
+              </ul>
+            </li>
+            <br />
             <li id="1.2"><h3>Structure</h3></li>
             <li id="1.3"><h3>Cross-System User Accounts</h3></li>
           </ul>
@@ -379,8 +427,8 @@
                       </li>
                     </ul>
                     <span
-                      >I will end this section with a really bad joke: A wife asks her husband, a programmer, “Could you please go shopping for me and buy one carton of milk? And if they have eggs, please get six.” A short time later, the programmer
-                      comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span
+                      >I will end this section with a programming joke: A woman asks her husband, a programmer, “Could you please go shopping for me and buy one carton of milk? And if they have eggs, please get six.” A short time later, the
+                      programmer comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span
                     >
                   </ul>
                 </li>
@@ -441,7 +489,40 @@
           <h2>Change Log</h2>
           <p></p>
           <div class="accordion" id="changelog">
-            <div class="card">
+            <div id="6.3" class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-two">
+                    <h3>v1.2</h3>
+                  </label>
+                </h5>
+              </div>
+              <div id="one-point-two" class="collapse" data-parent="#changelog">
+                <div class="card-body">
+                  <ul>
+                    <li>TBA</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="6.2" class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-one">
+                    <h3>v1.1</h3>
+                  </label>
+                </h5>
+              </div>
+              <div id="one-point-one" class="collapse" data-parent="#changelog">
+                <div class="card-body">
+                  <ul>
+                    <li>Add Generating Test Data Workflow</li>
+                    <li>Add System Requirements</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="6.1" class="card">
               <div class="card-header">
                 <h5 class="mb-0">
                   <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-zero">
@@ -461,39 +542,6 @@
                     <li>Decouple BASE64 Images From HTML File</li>
                     <li>Switch From CDN References To Offline Dependencies</li>
                     <li>Add Source Mapping Files For Dependencies</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-one">
-                    <h3>v1.1</h3>
-                  </label>
-                </h5>
-              </div>
-              <div id="one-point-one" class="collapse" data-parent="#changelog">
-                <div class="card-body">
-                  <ul>
-                    <li>Add Generating Test Data Workflow</li>
-                    <li>Add System Requirements</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-two">
-                    <h3>v1.2</h3>
-                  </label>
-                </h5>
-              </div>
-              <div id="one-point-two" class="collapse" data-parent="#changelog">
-                <div class="card-body">
-                  <ul>
-                    <li>TBA</li>
                   </ul>
                 </div>
               </div>
