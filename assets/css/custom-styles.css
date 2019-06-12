@@ -59,3 +59,7 @@ label.btn {
 #filler {
   background-color: white;
 }
+
+.small-caps {
+  font-variant: small-caps;
+}
