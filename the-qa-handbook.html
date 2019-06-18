@@ -55,7 +55,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Information Library</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#5.1">Stages Of Testing</a>
+                <a class="dropdown-item" href="#5.1">Levels Of Testing</a>
                 <a class="dropdown-item" href="#5.2">Cycle Time, TAKT Time, Lead Time</a>
                 <a class="dropdown-item" href="#5.3">Retesting VS Regression Testing</a>
                 <a class="dropdown-item" href="#5.4">Productivity Tips</a>
@@ -178,9 +178,9 @@
               <ul>
                 <li>
                   <p>
-                    <strong>All-Purpose Test Data:</strong> One of the easiest to use realistic data generators publicly available on the Internet is <a href="https://www.mockaroo.com/">mockaroo</a> which also has a very generous free tier. It can
+                    <strong>All-Purpose Test Data:</strong><span> One of the easiest to use realistic data generators publicly available on the Internet is <a href="https://www.mockaroo.com/">mockaroo</a> which also has a very generous free tier. It can
                     generate, at the time of writing this, 143 type of data ranging from names, addresses and NHS numbers to avatar URLs, drug names and company names. Mockaroo also supports regular expressions, so users can create their own data
-                    types.
+                    types.</span>
                   </p>
                   <p>
                     In order to generate data, simply add the required columns, select an output type and then either download or preview the results. The output type is a matter of personal preference; I personally lean towards JSON, however a table
@@ -198,14 +198,14 @@
                 </li>
                 <li>
                   <p>
-                    <strong>Bank Cards:</strong> Bank card details that can be used for testing purposes are provided by the companies that develop the products meddbase integrates with. Online payments in meddbase currently go through SagePay which
-                    provide a wide range of <a href="https://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions">test card details</a> usable for test transactions.
+                    <strong>Bank Cards:</strong><span> Bank card details that can be used for testing purposes are provided by the companies that develop the products meddbase integrates with. Online payments in meddbase currently go through SagePay which
+                    provide a wide range of <a href="https://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions">test card details</a> usable for test transactions.</span>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <strong>Phone Numbers:</strong> Mobile numbers in the range 07700 900000 to 07700 900999 can be used for testing purposes as these are reserved by Ofcom, which is the regulator for communications services in the United Kingdom.
-                    Ofcom also provides <a href="https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama">a range of geographic landline numbers</a> that can be used for testing.
+                    <strong>Phone Numbers:</strong><span> Mobile numbers in the range 07700 900000 to 07700 900999 can be used for testing purposes as these are reserved by Ofcom, which is the regulator for communications services in the United Kingdom.
+                    Ofcom also provides <a href="https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama">a range of geographic landline numbers</a> that can be used for testing.</span>
                   </p>
                   <p>
                     Please note that none of these phone numbers are allocated to communications providers, so calling or messaging them will not work, however they are in the correct format and using them ensures that calls or text messages are not
@@ -214,8 +214,8 @@
                 </li>
                 <li>
                   <p>
-                    <strong>Email Addresses:</strong> There are many websites that provide disposable email address services. Some of the most notable ones are <a href="https://tempail.com/">tempail.com</a>,
-                    <a href="https://tempmail.net/">tempmail.net</a> and <a href="https://temp-mail.org/">temp-mail.org</a>. These can be used securely to test email sending functionality to and from meddbase.
+                    <strong>Email Addresses:</strong><span> There are many websites that provide disposable email address services. Some of the most notable ones are <a href="https://tempail.com/">tempail.com</a>,
+                    <a href="https://tempmail.net/">tempmail.net</a> and <a href="https://temp-mail.org/">temp-mail.org</a>. These can be used securely to test email sending functionality to and from meddbase.</span>
                   </p>
                 </li>
               </ul>
@@ -261,24 +261,24 @@
                       <h5>State</h5>
                       <p>Throughout its lifecycle, a defect will transition through several states.</p>
                       <ul>
-                        <li><strong>New:</strong> A newly logged defect. Not yet confirmed so it could potentially be invalid, a duplicate, it may need more information, etc.</li>
-                        <li><strong>Confirmed:</strong> A defect that has been confirmed to be valid by one of the developers.</li>
-                        <li><strong>In Progress:</strong> A developer has started fixing this defect.</li>
+                        <li><strong>New:</strong><span> A newly logged defect. Not yet confirmed so it could potentially be invalid, a duplicate, it may need more information, etc.</span></li>
+                        <li><strong>Confirmed:</strong><span> A defect that has been confirmed to be valid by one of the developers.</span></li>
+                        <li><strong>In Progress:</strong><span> A developer has started fixing this defect.</span></li>
                         <li>
-                          <strong>Awaiting Merge:</strong> A developer has finished fixing this defect and is now waiting for the changes to be merged to the branch that will be deployed to the environment on which the defect needs to be retested.
+                          <strong>Awaiting Merge:</strong><span> A developer has finished fixing this defect and is now waiting for the changes to be merged to the branch that will be deployed to the environment on which the defect needs to be retested.</span>
                         </li>
                         <li>
-                          <strong>Parked:</strong> A defect ends up in this state if something causes the development work to be put on hold for an undetermined amount of time. An example of why this may happen could be that a defect was logged for a
-                          component that will soon be replaced.
+                          <strong>Parked:</strong><span> A defect ends up in this state if something causes the development work to be put on hold for an undetermined amount of time. An example of why this may happen could be that a defect was logged for a
+                          component that will soon be replaced.</span>
                         </li>
                         <li>
-                          <strong>Resolved:</strong> The defect has been fixed, and the fix has been deployed and is available for retesting and regression testing. Defects previously in the Awaiting Merge state are automatically moved to the
-                          Resolved state once the changes have been deployed; this works via an integration between targetprocess and GitLab.
+                          <strong>Resolved:</strong><span> The defect has been fixed, and the fix has been deployed and is available for retesting and regression testing. Defects previously in the Awaiting Merge state are automatically moved to the
+                          Resolved state once the changes have been deployed; this works via an integration between targetprocess and GitLab.</span>
                         </li>
-                        <li><strong>Awaiting Merge To Production:</strong> This state is for defects that have been fix verified and that are in the queue to be deployed to production sites.</li>
+                        <li><strong>Awaiting Merge To Production:</strong><span> This state is for defects that have been fix verified and that are in the queue to be deployed to production sites.</span></li>
                         <li>
-                          <strong>Done:</strong> This state is automated in the same way that the Resolved state is; once the fix has been verified, while the defect is in the Awaiting Merge To Production state, the card will automatically be marked
-                          Done by the GitLab integration after the changes have been deployed to production sites.
+                          <strong>Done:</strong><span> This state is automated in the same way that the Resolved state is; once the fix has been verified, while the defect is in the Awaiting Merge To Production state, the card will automatically be marked
+                          Done by the GitLab integration after the changes have been deployed to production sites.</span>
                         </li>
                       </ul>
                       <p></p>
@@ -319,18 +319,18 @@
                       <p>The seven severities currently defined in targetprocess are the following:</p>
                       <ul>
                         <li>
-                          <strong>Enhancement:</strong> This severity is reserved for nice-to-have features. Defects that usually fall into this category are quality-of-life changes that enhance the user's experience. Occasionally, missing features
-                          that would improve on an MVP (Minimum Viable Product) may fall into this category as well.
+                          <strong>Enhancement:</strong><span> This severity is reserved for nice-to-have features. Defects that usually fall into this category are quality-of-life changes that enhance the user's experience. Occasionally, missing features
+                          that would improve on an MVP (Minimum Viable Product) may fall into this category as well.</span>
                         </li>
-                        <li><strong>Trivial:</strong> This severity is mostly for typos and minute cosmetic defects.</li>
-                        <li><strong>Minor:</strong> Reserved for minor functionality issues and more noticeable cosmetic defects.</li>
-                        <li><strong>Average:</strong> The default defect severity. Average is used for garden-variety functionality issues.</li>
-                        <li><strong>Major:</strong> Reserved for major functionality issues. These defects will usually throw an exception.</li>
+                        <li><strong>Trivial:</strong><span> This severity is mostly for typos and minute cosmetic defects.</span></li>
+                        <li><strong>Minor:</strong><span> Reserved for minor functionality issues and more noticeable cosmetic defects.</span></li>
+                        <li><strong>Average:</strong><span> The default defect severity. Average is used for garden-variety functionality issues.</span></li>
+                        <li><strong>Major:</strong><span> Reserved for major functionality issues. These defects will usually throw an exception.</span></li>
                         <li>
-                          <strong>Critical:</strong> The defects that fall into this category are severe performance issues that cause the application to freeze or hang, runtime failures that cause the application to crash, serious functionality
-                          issues that prevent users from progressing with their work, exploitable security holes, data loss, data corruption, defects with associated clinical risk, et cetera.
+                          <strong>Critical:</strong><span> The defects that fall into this category are severe performance issues that cause the application to freeze or hang, runtime failures that cause the application to crash, serious functionality
+                          issues that prevent users from progressing with their work, exploitable security holes, data loss, data corruption, defects with associated clinical risk, et cetera.</span>
                         </li>
-                        <li><strong>Blocker:</strong> This is reserved for defects that prevent the progress of internal testing or for showstoppers that are impeding a rollout.</li>
+                        <li><strong>Blocker:</strong><span> This is reserved for defects that prevent the progress of internal testing or for showstoppers that are impeding a rollout.</span></li>
                       </ul>
                       <p></p>
                       <p>Business values are defined by the following Risk Assessment Matrix. Each business value is determined by the combination of the defect’s severity and its likelihood of occurrence.</p>
@@ -345,7 +345,7 @@
                       </p>
                       <ul>
                         <li>
-                          <strong>Resolution:</strong> Defines the reason for moving defects into certain states. Common uses of the Resolution field include:
+                          <strong>Resolution:</strong><span> Defines the reason for moving defects into certain states. Common uses of the Resolution field include:</span>
                           <ul>
                             <li>After a developer fixes a defect, they will mark it Resolved and set the Resolution to Fixed.</li>
                             <li>When a developer believes the defect is invalid, they will mark it Resolved and set the Resolution to Invalid.</li>
@@ -355,12 +355,12 @@
                           <span>Several other values are available for the Resolution field, however these are less commonly used.</span>
                         </li>
                         <li>
-                          <strong>Support Ticket ID:</strong> If a request for QA review includes a support ticket ID, then that ID needs to be copied over to the defect logged off the back of that request. More information about this is available in
-                          the section detailing the Requests For QA Review workflow.
+                          <strong>Support Ticket ID:</strong><span> If a request for QA review includes a support ticket ID, then that ID needs to be copied over to the defect logged off the back of that request. More information about this is available in
+                          the section detailing the Requests For QA Review workflow.</span>
                         </li>
                         <li>
-                          <strong>State Of Fix:</strong> The value of this field never needs to be set manually; it is controlled by an integration with GitLab, and the value will automatically be set to “Fix is on Development” when the fix for the
-                          defect has been merged to the development branch and to “Fix is on Development and Production” when the fix for the defect has been deployed to the production environment.
+                          <strong>State Of Fix:</strong><span> The value of this field never needs to be set manually; it is controlled by an integration with GitLab, and the value will automatically be set to “Fix is on Development” when the fix for the
+                          defect has been merged to the development branch and to “Fix is on Development and Production” when the fix for the defect has been deployed to the production environment.</span>
                         </li>
                       </ul>
                       <p></p>
@@ -390,8 +390,8 @@
                   <h4>Grammar/Punctuation/Syntax/Semantics</h4>
                   <ul>
                     <li>
-                      <strong>Grammar:</strong> Please always try to use correct grammar when logging defects and/or creating comments. To facilitate this, the Grammarly add-on can be installed in your browser. More information about Grammarly is
-                      available in the Tools section of this document. Examples of commonly made grammatical errors include:
+                      <strong>Grammar:</strong><span> Please always try to use correct grammar when logging defects and/or creating comments. To facilitate this, the Grammarly add-on can be installed in your browser. More information about Grammarly is
+                      available in the Tools section of this document. Examples of commonly made grammatical errors include:</span>
                       <ul>
                         <li>The incorrect use of homophones such as Then/Than, Their/There/They’re, To/Too, Your/You’re, Of/Off.</li>
                         <li>
@@ -402,7 +402,7 @@
                       </ul>
                     </li>
                     <li>
-                      <strong>Punctuation:</strong> Correct punctuation matters, so always try to keep on top of that. Grammarly, most of the time, can help with this as well. Examples of commonly made punctuation mistakes include:
+                      <strong>Punctuation:</strong><span> Correct punctuation matters, so always try to keep on top of that. Grammarly, most of the time, can help with this as well. Examples of commonly made punctuation mistakes include:</span>
                       <ul>
                         <li>Not ending sentences with a period, or an exclamation/question mark where appropriate.</li>
                         <li>Using dashes for hyphens and vice versa. A hyphen (-) is a punctuation mark that’s used to join words or parts of words, whereas a dash (–) is longer than a hyphen and is commonly used to indicate a range or a pause</li>
@@ -410,24 +410,21 @@
                       </ul>
                     </li>
                     <li>
-                      <strong>Syntax:</strong> Syntax is essentially about what word comes before and after another word. Please make sure your sentences don't end up sounding like tongue twisters. English can be weird; it can be understood through
-                      tough thorough thought, though.
+                      <strong>Syntax:</strong><span> Syntax is essentially about what word comes before and after another word. Please make sure your sentences don't end up sounding like tongue twisters. English can be weird; it can be understood through
+                      tough thorough thought, though.</span>
                     </li>
-                    <li><strong>Semantics:</strong> Semantics are concerned with the meaning of signifiers such as words, phrases, signs, and symbols. In terms of meaning, some very important guidelines on logging defects are:</li>
+                    <li><strong>Semantics:</strong><span> Semantics are concerned with the meaning of signifiers such as words, phrases, signs, and symbols. In terms of meaning, some very important guidelines on logging defects are:</span></li>
                     <ul>
                       <li>
-                        Never log any defects that sound like requests for the developer. An incorrect defect title would be <em>“<s>Please change the color of this text.</s>”</em>, however the correct title could be
-                        <em>"Inconsistent text color being used."</em>.
+                      <span>Never log any defects that sound like requests for the developer. An incorrect defect title would be <em>“<s>Please change the color of this text.</s>”</em>, however the correct title could be
+                        <em>"Inconsistent text color being used."</em>.</span>
                       </li>
                       <li>
-                        Never be subjective while describing a defect. An incorrect description would be <em>“<s>When I logged in, I was presented with an error message.</s>”</em>, however the correct description could be
-                        <em>“After logging in, it was observed that an error occurs.”</em>. Always try to avoid describing defects in the first person, and always try to be as objective as possible.
+                      <span>Never be subjective while describing a defect. An incorrect description would be <em>“<s>When I logged in, I was presented with an error message.</s>”</em>, however the correct description could be
+                        <em>“After logging in, it was observed that an error occurs.”</em>. Always try to avoid describing defects in the first person, and always try to be as objective as possible.</span>
                       </li>
                     </ul>
-                    <span
-                      >I will end this section with a programming joke: A woman asks her husband, a programmer, “Could you please go shopping for me, and buy one carton of milk? And if they have eggs, please get six.” A short time later, the
-                      programmer comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span
-                    >
+                    <span>I will end this section with a programming joke: A woman asks her husband, a programmer, “Could you please go shopping for me, and buy one carton of milk? And if they have eggs, please get six.” A short time later, the programmer comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span>
                   </ul>
                 </li>
                 <p></p>
@@ -467,7 +464,18 @@
         <li>
           <h2>Information Library</h2>
           <ul>
-            <li id="5.1"><h3>Stages Of Testing</h3></li>
+            <li id="5.1"><h3>Levels Of Testing</h3>
+            <p>Software Testing Levels are the different stages of the software development lifecycle where testing is conducted. There are four levels of software testing: Unit >> Integration >> System >> Acceptance.</p>
+            <p>Some tend to include Regression Testing as a separate level of software testing but that is a misconception. Regression Testing is, in fact, just a type of testing that can be performed at any of the four main levels.</p>
+            <img src="assets\img\05-information-library\01-levels-of-testing\02-the-four-levels-of-testing.png" alt="Information Library: Levels Of Testing" class="img-fluid img-container" />
+            <p></p>
+            <ul>
+              <li><strong>Unit Testing:</strong><span> A level of software testing where individual units/components of a software are tested. Unit tests are typically automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended. In procedural programming, a unit could be an entire module, but it is more commonly an individual function or procedure. In object-oriented programming, a unit is often an entire interface, such as a class, but could be an individual method. By writing tests first for the smallest testable units, then the compound behaviors between those, one can build up comprehensive tests for complex applications.</span></li>
+              <li><strong>Integration Testing:</strong><span></span></li>
+              <li><strong>System Testing:</strong><span></span></li>
+              <li><strong>Acceptance Testing:</strong><span></span></li>
+            </ul>
+            </li>
             <li id="5.2"><h3>Cycle Time, TAKT Time, Lead Time</h3></li>
             <li id="5.3"><h3>Retesting VS Regression Testing</h3></li>
             <li id="5.4">
