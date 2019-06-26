@@ -67,16 +67,13 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Change Log</a>
               <div class="dropdown-menu">
+                <a class="dropdown-item" href="#6.4">v1.3</a>
                 <a class="dropdown-item" href="#6.3">v1.2</a>
                 <a class="dropdown-item" href="#6.2">v1.1</a>
                 <a class="dropdown-item" href="#6.1">v1.0</a>
               </div>
             </li>
           </ul>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" />
-            <button class="btn btn-dark" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -744,10 +741,28 @@
           </ul>
         </li>
         <br />
+
+        <!-- Start Of Change Log -->
         <li>
           <h2>Change Log</h2>
           <p></p>
           <div class="accordion" id="changelog">
+            <div id="6.4" class="card">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-three">
+                    <h3>v1.3</h3>
+                  </label>
+                </h5>
+              </div>
+              <div id="one-point-three" class="collapse" data-parent="#changelog">
+                <div class="card-body">
+                  <ul>
+                    <li>Add Bookmarks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div id="6.3" class="card">
               <div class="card-header">
                 <h5 class="mb-0">
@@ -762,7 +777,6 @@
                     <li>Add Continuous Integration/Delivery/Deployment To Information Library</li>
                     <li>Add Case Styles To Information Library</li>
                     <li>Add Levels Of Testing To Information Library</li>
-                    <li>Add Search Box Placeholder</li>
                   </ul>
                 </div>
               </div>
@@ -810,6 +824,8 @@
             </div>
           </div>
         </li>
+        <!-- End Of Change Log -->
+
       </ul>
     </div>
     <div class="jumbotron" id="filler"></div>
