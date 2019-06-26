@@ -79,3 +79,13 @@ label.btn {
   box-shadow: none;
   outline:none;
 }
+
+#system-requirements-button,
+#system-requirements-button:hover,
+#system-requirements-button:active,
+#system-requirements-button:active:focus,
+#system-requirements-button:focus,
+#system-requirements-button:visited {
+  box-shadow: none;
+  outline:none;
+}

@@ -98,56 +98,59 @@
           <h2>Application</h2>
           <ul>
             <li id="1.1">
-              <h3>System Requirements</h3>
-              <ul>
-                <li>Internet Connection</li>
-                <ul>
-                  <li>ADSL 8.0 MB/s Or Better</li>
-                </ul>
-                <li>Operating System</li>
-                <ul>
-                  <li>Current Major Version &amp; Previous Major Version</li>
-                  <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.13 High Sierra</a>, <a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.14 Mojave</a></li>
-                  </ul>
-                </ul>
-                <li>Browser (Core Application)</li>
-                <ul>
-                  <li>Current Major Version &amp; Previous Major Version</li>
-                  <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
-                  </ul>
-                </ul>
-                <li>Browser (Patient\OH Portal)</li>
-                <ul>
-                  <li>Current Major Version &amp; Previous Major Version</li>
-                  <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
-                  </ul>
-                  <li>Current Major Version Only</li>
-                  <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Safari_version_history">MacOS Safari</a></li>
-                  </ul>
-                </ul>
-                <li>WebDAV</li>
-                <ul>
-                  <li>
-                    <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2016</a>, <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2019</a>,
-                    <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 365</a>
-                  </li>
-                </ul>
-                <li>Document Manager</li>
-                <ul>
-                  <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
-                </ul>
-              </ul>
+                <button class="btn btn-outline-dark mb-2" id="system-requirements-button" type="button" data-toggle="collapse" data-target="#system-requirements"><h3>System Requirements</h3></button>
+                <div class="collapse" id="system-requirements">
+                  <div class="card card-body">
+                    <ul>
+                      <li>Internet Connection</li>
+                      <ul>
+                        <li>ADSL 8.0 MB/s Or Better</li>
+                      </ul>
+                      <li>Operating System</li>
+                      <ul>
+                        <li>Current Major Version &amp; Previous Major Version</li>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.13 High Sierra</a>, <a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.14 Mojave</a></li>
+                        </ul>
+                      </ul>
+                      <li>Browser (Core Application)</li>
+                      <ul>
+                        <li>Current Major Version &amp; Previous Major Version</li>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
+                        </ul>
+                      </ul>
+                      <li>Browser (Patient\OH Portal)</li>
+                      <ul>
+                        <li>Current Major Version &amp; Previous Major Version</li>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
+                          <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
+                        </ul>
+                        <li>Current Major Version Only</li>
+                        <ul>
+                          <li><a href="https://en.wikipedia.org/wiki/Safari_version_history">MacOS Safari</a></li>
+                        </ul>
+                      </ul>
+                      <li>WebDAV</li>
+                      <ul>
+                        <li>
+                          <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2016</a>, <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2019</a>,
+                          <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 365</a>
+                        </li>
+                      </ul>
+                      <li>Document Manager</li>
+                      <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
             </li>
-            <br />
             <li id="1.2"><h3>Structure</h3></li>
             <li id="1.3"><h3>Cross-System User Accounts</h3></li>
           </ul>
@@ -160,7 +163,7 @@
               <h3>Bookmarks</h3>
               <p>A comprehensive collection of bookmarks linking to a myriad of useful sites and resources can be downloaded by clicking the button below. The bookmarks are in both HTML and JSON format, so they should be compatible with most browsers.</p>
               <form method="get" action="assets\download\bookmarks-2019-06-26.zip">
-                <button type="submit" class="btn btn-dark download-button" ><i class="fas fa-download"></i><span>&nbsp;&nbsp;</span>Download Bookmarks</button>
+                <button type="submit" class="btn btn-outline-dark download-button" ><i class="fas fa-download"></i><span>&nbsp;&nbsp;</span>Download Bookmarks</button>
               </form>
               <p></p>
               <p>It is recommended, but not required, that you clear all your current bookmarks before importing the ones attached to this QA Handbook. This is because the imported bookmarks will be added to your already-existing bookmarks, which may result in bookmark duplication.</p>
