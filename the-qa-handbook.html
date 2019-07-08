@@ -177,6 +177,30 @@
             </li>
             <li id="2.3">
               <h3>Windows</h3>
+              <ul>
+                <li><strong>Custom Hotkeys:</strong><span> In Windows, it is possible to assign hotkeys for opening applications by setting these on one or more shortcuts linking to the application executable. This can be done by right-clicking the shortcut, opening its properties and typing the hotkeys inside the Shortcut Key field.</span>
+                <p></p>
+                <p>One thing to note is that Windows has some built-in hotkeys that do various things so, in order to not overlap with those, it is recommended that the custom hotkeys use the format CTRL + SHIFT + ALT + KEY.</p>
+                <img src="assets\img\02-productivity\03-windows\01-hotkeys.png" alt="Productivity: Windows: Hotkeys" class="img-fluid img-container" />
+                <p></p>
+                <p>The problem with hotkeys, however, is that, due to the way Windows operates, these binds are not automatically loaded on boot, which means they will only work after setting them up and until starting a new Windows session (e.g. rebooting the computer). Luckily, there is a workaround for this.</p>
+                <p>Windows doesn’t run a system-wide search for shortcut files while restoring hotkey assignments; it does however search in specific pre-defined directories, and one of these directories is the Start Menu folder. This means that any shortcuts in a sub-directory of the current user’s Start Menu folder will have their hotkeys loaded at login.</p>
+                <p>The hotkeys folder can be created either manually or by running the following PowerShell commands in an elevated (admin) shell:</p>
+                <div class="shell-commands-parent">
+                  <div class="shell-commands-child">
+                    <code>$Path="$Env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu"</code>
+                    <br>
+                    <code>New-Item -Path "$Path\_hotkeys" -ItemType Directory</code>
+                    <br>
+                    <code>Set-Location -Path "$Path\_hotkeys"</code>
+                    <br>
+                    <code>Invoke-Item .</code>
+                  </div>
+                </div>
+                <p></p>
+                <p>Once this folder has been created, simply copy inside all the shortcut files with hotkey assignments.</p>
+              </li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -779,6 +803,7 @@
                     <li>Add Bookmarks</li>
                     <li>Make System Requirements Collapsible</li>
                     <li>Add Application Structure</li>
+                    <li>Add Custom Windows Hotkeys To Productivity</li>
                   </ul>
                 </div>
               </div>
