@@ -1,950 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <title>The QA Handbook</title>
+<head>
+  <meta charset="UTF-8" />
 
-    <!--  Styles -->
-    <link rel="stylesheet" href="assets\css\bootstrap-4.3.1.css" />
-    <link rel="stylesheet" href="assets\css\fontawesome-all-5.9.0.css" />
-    <link rel="stylesheet" href="assets\css\custom-styles.css" />
-  </head>
+  <title>The QA Handbook</title>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Application</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#1.1">System Requirements</a>
-                <a class="dropdown-item" href="#1.2">Structure</a>
-                <a class="dropdown-item" href="#1.3">Cross-System User Accounts</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Productivity</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#2.1">Bookmarks</a>
-                <a class="dropdown-item" href="#2.2">Outlook</a>
-                <a class="dropdown-item" href="#2.3">Windows</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Tools</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#3.1">targetprocess</a>
-                <a class="dropdown-item" href="#3.2">mattermost</a>
-                <a class="dropdown-item" href="#3.3">Skype For Business</a>
-                <a class="dropdown-item" href="#3.4">Greenshot</a>
-                <a class="dropdown-item" href="#3.5">OBS Studio</a>
-                <a class="dropdown-item" href="#3.6">Grammarly</a>
-                <a class="dropdown-item" href="#3.7">LastPass</a>
-                <a class="dropdown-item" href="#3.8">OneDrive For Business</a>
-                <a class="dropdown-item" href="#3.9">Mirth Connect</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Workflows</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#4.1">Requests For QA Review</a>
-                <a class="dropdown-item" href="#4.2">Generating Test Data</a>
-                <a class="dropdown-item" href="#4.3">Logging Defects</a>
-                <a class="dropdown-item" href="#4.4">Test Cycles</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Information Library</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#5.1">Levels Of Testing</a>
-                <a class="dropdown-item" href="#5.2">Cycle Time, TAKT Time, Lead Time</a>
-                <a class="dropdown-item" href="#5.3">Retesting VS Regression Testing</a>
-                <a class="dropdown-item" href="#5.4">Error, Defect, Failure, Bug</a>
-                <a class="dropdown-item" href="#5.5">Case Styles</a>
-                <a class="dropdown-item" href="#5.6">Continuous Integration/Delivery/Deployment</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Change Log</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#6.4">v1.3</a>
-                <a class="dropdown-item" href="#6.3">v1.2</a>
-                <a class="dropdown-item" href="#6.2">v1.1</a>
-                <a class="dropdown-item" href="#6.1">v1.0</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <!--  Styles -->
+  <link rel="stylesheet" href="assets\css\bootstrap-4.3.1.css" />
+  <link rel="stylesheet" href="assets\css\fontawesome-all-5.9.0.css" />
+  <link rel="stylesheet" href="assets\css\custom-styles.css" />
+</head>
 
-    <!-- Title -->
-    <div class="container" id="title">
-      <h1 class="text-center">
-        The QA Handbook
-      </h1>
-    </div>
-
-    <!-- Content -->
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <ul>
-        <li>
-          <h2>Application</h2>
-          <ul>
-            <li id="1.1">
-              <button class="btn btn-outline-dark mt-2 mb-2" id="system-requirements-button" type="button" data-toggle="collapse" data-target="#system-requirements"><h3>System Requirements</h3></button>
-              <div class="collapse" id="system-requirements">
-                <div class="card card-body">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Application</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#1.1">System Requirements</a>
+              <a class="dropdown-item" href="#1.2">Structure</a>
+              <a class="dropdown-item" href="#1.3">Cross-System User Accounts</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Productivity</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#2.1">Bookmarks</a>
+              <a class="dropdown-item" href="#2.2">Outlook</a>
+              <a class="dropdown-item" href="#2.3">Windows</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Tools</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#3.1">targetprocess</a>
+              <a class="dropdown-item" href="#3.2">mattermost</a>
+              <a class="dropdown-item" href="#3.3">Skype For Business</a>
+              <a class="dropdown-item" href="#3.4">Greenshot</a>
+              <a class="dropdown-item" href="#3.5">OBS Studio</a>
+              <a class="dropdown-item" href="#3.6">Grammarly</a>
+              <a class="dropdown-item" href="#3.7">LastPass</a>
+              <a class="dropdown-item" href="#3.8">OneDrive For Business</a>
+              <a class="dropdown-item" href="#3.9">Mirth Connect</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Workflows</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#4.1">Requests For QA Review</a>
+              <a class="dropdown-item" href="#4.2">Generating Test Data</a>
+              <a class="dropdown-item" href="#4.3">Logging Defects</a>
+              <a class="dropdown-item" href="#4.4">Test Cycles</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Information Library</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#5.1">Levels Of Testing</a>
+              <a class="dropdown-item" href="#5.2">Cycle Time, TAKT Time, Lead Time</a>
+              <a class="dropdown-item" href="#5.3">Retesting VS Regression Testing</a>
+              <a class="dropdown-item" href="#5.4">Error, Defect, Failure, Bug</a>
+              <a class="dropdown-item" href="#5.5">Case Styles</a>
+              <a class="dropdown-item" href="#5.6">Continuous Integration/Delivery/Deployment</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Change Log</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#6.4">v1.3</a>
+              <a class="dropdown-item" href="#6.3">v1.2</a>
+              <a class="dropdown-item" href="#6.2">v1.1</a>
+              <a class="dropdown-item" href="#6.1">v1.0</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <div class="container" id="title">
+    <h1 class="text-center">
+      The QA Handbook
+    </h1>
+  </div>
+
+  <!-- Content -->
+  <div class="container">
+    <ul>
+      <li>
+        <h2>Application</h2>
+        <ul>
+          <li id="1.1">
+            <button class="btn btn-outline-dark mt-2 mb-2" id="system-requirements-button" type="button" data-toggle="collapse" data-target="#system-requirements">
+              <h3>System Requirements</h3>
+            </button>
+            <div class="collapse" id="system-requirements">
+              <div class="card card-body">
+                <ul>
+                  <li>Internet Connection</li>
                   <ul>
-                    <li>Internet Connection</li>
-                    <ul>
-                      <li>ADSL 8.0 MB/s Or Better</li>
-                    </ul>
-                    <li>Operating System</li>
-                    <ul>
-                      <li>Current Major Version &amp; Previous Major Version</li>
-                      <ul>
-                        <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.13 High Sierra</a>, <a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.14 Mojave</a></li>
-                      </ul>
-                    </ul>
-                    <li>Browser (Core Application)</li>
-                    <ul>
-                      <li>Current Major Version &amp; Previous Major Version</li>
-                      <ul>
-                        <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
-                      </ul>
-                    </ul>
-                    <li>Browser (Patient\OH Portal)</li>
-                    <ul>
-                      <li>Current Major Version &amp; Previous Major Version</li>
-                      <ul>
-                        <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
-                      </ul>
-                      <li>Current Major Version Only</li>
-                      <ul>
-                        <li><a href="https://en.wikipedia.org/wiki/Safari_version_history">MacOS Safari</a></li>
-                      </ul>
-                    </ul>
-                    <li>WebDAV</li>
-                    <ul>
-                      <li>
-                        <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2016</a>, <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2019</a>,
-                        <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 365</a>
-                      </li>
-                    </ul>
-                    <li>Document Manager</li>
+                    <li>ADSL 8.0 MB/s Or Better</li>
+                  </ul>
+                  <li>Operating System</li>
+                  <ul>
+                    <li>Current Major Version &amp; Previous Major Version</li>
                     <ul>
                       <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.13 High Sierra</a>, <a href="https://en.wikipedia.org/wiki/MacOS_version_history">OS X 10.14 Mojave</a></li>
                     </ul>
                   </ul>
-                </div>
-              </div>
-            </li>
-            <li id="1.2">
-              <button class="btn btn-outline-dark mt-2 mb-2" id="application-structure-button" type="button" data-toggle="collapse" data-target="#application-structure"><h3>Structure</h3></button>
-              <div class="collapse" id="application-structure">
-                <img src="assets\img\01-application\02-structure\01-application-structure.png" alt="Application: Structure" class="img-fluid img-container" />
-              </div>
-              <p></p>
-            </li>
-            <li id="1.3"><h3>Cross-System User Accounts</h3></li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          <h2>Productivity</h2>
-          <ul>
-            <li id="2.1">
-              <h3>Bookmarks</h3>
-              <p>
-                A comprehensive collection of bookmarks linking to a myriad of useful sites and resources can be downloaded by clicking the button below. The bookmarks are in both HTML and JSON format, so they should be compatible with most browsers.
-              </p>
-              <form method="get" action="assets\download\bookmarks-2019-06-26.zip">
-                <button type="submit" class="btn btn-outline-dark download-button"><i class="fas fa-download"></i><span>&nbsp;&nbsp;</span>Download Bookmarks</button>
-              </form>
-              <p></p>
-              <p>
-                It is recommended, but not required, that you clear all your current bookmarks before importing the ones attached to this QA Handbook. This is because the imported bookmarks will be added to your already-existing bookmarks, which may
-                result in bookmark duplication.
-              </p>
-            </li>
-            <li id="2.2">
-              <h3>Outlook</h3>
-            </li>
-            <li id="2.3">
-              <h3>Windows</h3>
-              <ul>
-                <li>
-                  <strong>Custom Hotkeys:</strong
-                  ><span>
-                    In Windows, it is possible to assign hotkeys for opening applications by setting these on one or more shortcuts linking to the application executable. This can be done by right-clicking the shortcut, opening its properties and
-                    typing the hotkeys inside the Shortcut Key field.</span
-                  >
-                  <p></p>
-                  <p>One thing to note is that Windows has some built-in hotkeys that do various things so, in order to not overlap with those, it is recommended that the custom hotkeys use the format CTRL + SHIFT + ALT + KEY.</p>
-                  <img src="assets\img\02-productivity\03-windows\01-hotkeys.png" alt="Productivity: Windows: Hotkeys" class="img-fluid img-container" />
-                  <p></p>
-                  <p>
-                    The problem with hotkeys, however, is that, due to the way Windows operates, these binds are not automatically loaded on boot, which means they will only work after setting them up and until starting a new Windows session (e.g.
-                    rebooting the computer). Luckily, there is a workaround for this.
-                  </p>
-                  <p>
-                    Windows doesn’t run a system-wide search for shortcut files while restoring hotkey assignments; it does however search in specific pre-defined directories, and one of these directories is the Start Menu folder. This means that any
-                    shortcuts in a sub-directory of the current user’s Start Menu folder will have their hotkeys loaded at login.
-                  </p>
-                  <p>The hotkeys folder can be created either manually or by running the following PowerShell commands in an elevated (admin) shell:</p>
-                  <div class="shell-commands-parent">
-                    <div class="shell-commands-child">
-                      <code>$Path="$Env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu"</code>
-                      <br />
-                      <code>New-Item -Path "$Path\_hotkeys" -ItemType Directory</code>
-                      <br />
-                      <code>Set-Location -Path "$Path\_hotkeys"</code>
-                      <br />
-                      <code>Invoke-Item .</code>
-                    </div>
-                  </div>
-                  <p></p>
-                  <p>Once this folder has been created, simply copy inside all the shortcut files with hotkey assignments.</p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h2>Tools</h2>
-          <ul>
-            <li id="3.1"><h3>targetprocess</h3></li>
-            <li id="3.2"><h3>mattermost</h3></li>
-            <li id="3.3"><h3>Skype For Business</h3></li>
-            <li id="3.4"><h3>Greenshot</h3></li>
-            <li id="3.5"><h3>OBS Studio</h3></li>
-            <li id="3.6"><h3>Grammarly</h3></li>
-            <li id="3.7"><h3>LastPass</h3></li>
-            <li id="3.8"><h3>OneDrive For Business</h3></li>
-            <li id="3.9"><h3>Mirth Connect</h3></li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          <h2>Workflows</h2>
-          <ul>
-            <li id="4.1"><h3>Requests For QA Review</h3></li>
-            <li id="4.2">
-              <h3>Generating Test Data</h3>
-              <ul>
-                <li>
-                  <p>
-                    <strong>All-Purpose Test Data:</strong
-                    ><span>
-                      One of the easiest to use realistic data generators publicly available on the Internet is <a href="https://www.mockaroo.com/">mockaroo</a> which also has a very generous free tier. It can generate, at the time of writing this,
-                      143 type of data ranging from names, addresses and NHS numbers to avatar URLs, drug names and company names. Mockaroo also supports regular expressions, so users can create their own data types.</span
-                    >
-                  </p>
-                  <p>
-                    In order to generate data, simply add the required columns, select an output type and then either download or preview the results. The output type is a matter of personal preference; I personally lean towards JSON, however a table
-                    format such as Excel may be easier to look at for most people.
-                  </p>
-                  <img src="assets\img\04-workflows\02-generating-test-data\01-mockaroo-configuration.png" alt="Generating Test Data: Mockaroo Configuration" class="img-fluid img-container" />
-                  <p></p>
-                  <p>The number of results is defined by the numbers of rows set to generate. Only up to 1000 rows can be generated as part of the free tier, however that is more than enough for most non-enterprise users.</p>
-                  <img src="assets\img\04-workflows\02-generating-test-data\02-mockaroo-results.png" alt="Generating Test Data: Mockaroo Results" class="img-fluid img-container" />
-                  <p></p>
-                  <p>
-                    Another very powerful tool for generating test data is faker.js, which has the advantage of being open source. Setting it up involves a bit of technical complexity, however comprehensive instructions on setup and usage can be
-                    found on the <a href="https://github.com/marak/faker.js">faker.js GitHub page</a>. The library is also available as an <a href="https://www.npmjs.com/package/faker">NPM package</a>.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Bank Cards:</strong
-                    ><span>
-                      Bank card details that can be used for testing purposes are provided by the companies that develop the products meddbase integrates with. Online payments in meddbase currently go through SagePay which provide a wide range of
-                      <a href="https://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions">test card details</a> usable for test transactions.</span
-                    >
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Phone Numbers:</strong
-                    ><span>
-                      Mobile numbers in the range 07700 900000 to 07700 900999 can be used for testing purposes as these are reserved by Ofcom, which is the regulator for communications services in the United Kingdom. Ofcom also provides
-                      <a href="https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama">a range of geographic landline numbers</a> that can be used for testing.</span
-                    >
-                  </p>
-                  <p>
-                    Please note that none of these phone numbers are allocated to communications providers, so calling or messaging them will not work, however they are in the correct format and using them ensures that calls or text messages are not
-                    received by real people which is very important because text messages or automated calls may potentially contain sensitive test data.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Email Addresses:</strong
-                    ><span>
-                      There are many websites that provide disposable email address services. Some of the most notable ones are <a href="https://tempail.com/">tempail.com</a>, <a href="https://tempmail.net/">tempmail.net</a> and
-                      <a href="https://temp-mail.org/">temp-mail.org</a>. These can be used securely to test email sending functionality to and from meddbase.</span
-                    >
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li id="4.3">
-              <h3>Logging Defects</h3>
-              <ul>
-                <li>
-                  <h4>Structure</h4>
-                  <p>The structure of a defect card in targetprocess should be in accordance with the following guidelines:</p>
-                  <p>The body of the defect starts with a detailed description. Please be sure to include all the relevant information, while avoiding extra unneeded information that may confuse the reader.</p>
-                  <p>The description is separated from the steps to reproduce by a horizontal line. This can either be inserted via the user interface of the editor, or by adding a &lt;hr&gt; tag while inspecting the source of the defect body.</p>
-                  <p>
-                    The second section contains details on where the issue reproduces and what the steps to reproduce are. Credentials and environment variables are typed in on a single line in the format “system > user > password (optional) >
-                    browser (optional)”. The browser is only required if the issue is browser specific. Examples include “system.meddbase.com > MMS.User@HCA > Mozilla Firefox” or “qa.meddbase.com > BRL.Vlad > myPassword”. Following this line are the
-                    steps to reproduce, which must be typed on sequentially numbered rows. Please don’t skip any logical step, while also making sure that the STR are short and concise, as not to confuse the reader. Ideally, the steps to reproduce
-                    should be a list element; HTML lists can be inserted into the defect description via the text editor user interface.
-                  </p>
-                  <p>
-                    If additional information is available, such as a stack trace, then it is separated from the previous sections by another horizontal line per block of additional information. Most often, stack traces will preserve the formatting
-                    of the HTML element that they were copied from; to avoid copying this formatting to the defect body, please first remove it. One of the easiest ways of accomplishing this while also preserving newline characters is to paste into a
-                    text document, select all, copy again, and finally paste into targetprocess.
-                  </p>
-                  <img src="assets\img\04-workflows\03-logging-defects\01-structure.png" alt="Logging Defects: Structure" class="img-fluid img-container" />
-                </li>
-                <p></p>
-                <li>
-                  <h4>Attachments</h4>
-                  <p>
-                    It is preferable that attachments are captured via Greenshot (for image) and OBS Studio (for video); this is explained in more detail in the Tools section of this handbook. Video attachments can only be uploaded as files, while
-                    image attachments can be either uploaded as files or pasted in comments as inline images. The golden rule is: If an inline image takes up too much screen space, then upload it as a file instead. Too much space would be an image
-                    that would cause the comment box to expand in height more than twice the default size.
-                  </p>
-                  <img src="assets\img\04-workflows\03-logging-defects\02-attachments.png" alt="Logging Defects: Attachments" class="img-fluid img-container" />
-                  <p></p>
-                  <p>When uploading attachments, please make sure that the file name is a timestamp in the format "YYYY-MM-DD_HH-MM-SS". This can be configured in the software product used to capture the attachment.</p>
-                </li>
-                <li>
-                  <h4>Defect Parameters</h4>
-                  <p>There are many built-in as well as custom fields that can be set while logging a defect. The most commonly used ones are the following:</p>
+                  <li>Browser (Core Application)</li>
                   <ul>
-                    <li>
-                      <h5>State</h5>
-                      <p>Throughout its lifecycle, a defect will transition through several states.</p>
-                      <ul>
-                        <li><strong>New:</strong><span> A newly logged defect. Not yet confirmed so it could potentially be invalid, a duplicate, it may need more information, etc.</span></li>
-                        <li><strong>Confirmed:</strong><span> A defect that has been confirmed to be valid by one of the developers.</span></li>
-                        <li><strong>In Progress:</strong><span> A developer has started fixing this defect.</span></li>
-                        <li>
-                          <strong>Awaiting Merge:</strong
-                          ><span> A developer has finished fixing this defect and is now waiting for the changes to be merged to the branch that will be deployed to the environment on which the defect needs to be retested.</span>
-                        </li>
-                        <li>
-                          <strong>Parked:</strong
-                          ><span>
-                            A defect ends up in this state if something causes the development work to be put on hold for an undetermined amount of time. An example of why this may happen could be that a defect was logged for a component that will
-                            soon be replaced.</span
-                          >
-                        </li>
-                        <li>
-                          <strong>Resolved:</strong
-                          ><span>
-                            The defect has been fixed, and the fix has been deployed and is available for retesting and regression testing. Defects previously in the Awaiting Merge state are automatically moved to the Resolved state once the changes
-                            have been deployed; this works via an integration between targetprocess and GitLab.</span
-                          >
-                        </li>
-                        <li><strong>Awaiting Merge To Production:</strong><span> This state is for defects that have been fix verified and that are in the queue to be deployed to production sites.</span></li>
-                        <li>
-                          <strong>Done:</strong
-                          ><span>
-                            This state is automated in the same way that the Resolved state is; once the fix has been verified, while the defect is in the Awaiting Merge To Production state, the card will automatically be marked Done by the GitLab
-                            integration after the changes have been deployed to production sites.</span
-                          >
-                        </li>
-                      </ul>
-                      <p></p>
-                      <img src="assets\img\04-workflows\03-logging-defects\03-states.png" alt="Logging Defects: States" class="img-fluid img-container" />
-                      <p></p>
-                      <p>
-                        Some states require the user to leave a comment when moving the card to that state. This comment is plain-text only, so if tags, URLs, screenshots etc. need to be included in this comment then please enter the text-only part
-                        first so that targetprocess allows changing the state and then go back to your comment and update it with any edits that may be required.
-                      </p>
-                      <img src="assets\img\04-workflows\03-logging-defects\04-required-state-comments.png" alt="Logging Defects: Required State Comments" class="img-fluid img-container" />
-                      <p></p>
-                    </li>
-                    <li>
-                      <h5>Assignments</h5>
-                      <p>
-                        Teams can be assigned to defects and, in most cases, it will only be possible to assign a single team per defect. Assigning a team to a defect, and generally to a targetprocess entity, can kick off a team workflow which can
-                        divide a state into multiple sub-states, as can be seen below. Only assign teams to targetprocess entities if instructed to do so by the QA manager.
-                      </p>
-                      <img src="assets\img\04-workflows\03-logging-defects\05-team-assignments.png" alt="Logging Defects: Team Assignments" class="img-fluid img-container" />
-                      <p></p>
-                      <p>
-                        Apart from team assignments, individual people can be assigned to specific roles. More than one person can be assigned to a single role. Only assign individual people to targetprocess entities if instructed to do so by the QA
-                        manager.
-                      </p>
-                      <p>
-                        The people assigned to the role that is responsible for the defect’s current state will appear in a heavier font. For example, in the next image, the defect is in the Parked state and the role responsible for the Parked state
-                        in this example is the Support Person role, so Colin’s name appears in bold text.
-                      </p>
-                      <img src="assets\img\04-workflows\03-logging-defects\06-assignments.png" alt="Logging Defects: Assignments" class="img-fluid img-container" />
-                      <p></p>
-                    </li>
-                    <li>
-                      <h5>Severities & Business Values</h5>
-                      <p>The severity and business value of a defect dictate the priority of fixing that defect. Defect severities are 'set in stone', while business values are determined by a Risk Assessment Matrix.</p>
-                      <p></p>
-                      <img src="assets\img\04-workflows\03-logging-defects\07-severities-and-business-values.png" alt="Logging Defects: Severities & Business Values" class="img-fluid img-container" />
-                      <p></p>
-                      <p>The seven severities currently defined in targetprocess are the following:</p>
-                      <ul>
-                        <li>
-                          <strong>Enhancement:</strong
-                          ><span>
-                            This severity is reserved for nice-to-have features. Defects that usually fall into this category are quality-of-life changes that enhance the user's experience. Occasionally, missing features that would improve on an MVP
-                            (Minimum Viable Product) may fall into this category as well.</span
-                          >
-                        </li>
-                        <li><strong>Trivial:</strong><span> This severity is mostly for typos and minute cosmetic defects.</span></li>
-                        <li><strong>Minor:</strong><span> Reserved for minor functionality issues and more noticeable cosmetic defects.</span></li>
-                        <li><strong>Average:</strong><span> The default defect severity. Average is used for garden-variety functionality issues.</span></li>
-                        <li><strong>Major:</strong><span> Reserved for major functionality issues. These defects will usually throw an exception.</span></li>
-                        <li>
-                          <strong>Critical:</strong
-                          ><span>
-                            The defects that fall into this category are severe performance issues that cause the application to freeze or hang, runtime failures that cause the application to crash, serious functionality issues that prevent users
-                            from progressing with their work, exploitable security holes, data loss, data corruption, defects with associated clinical risk, et cetera.</span
-                          >
-                        </li>
-                        <li><strong>Blocker:</strong><span> This is reserved for defects that prevent the progress of internal testing or for showstoppers that are impeding a rollout.</span></li>
-                      </ul>
-                      <p></p>
-                      <p>Business values are defined by the following Risk Assessment Matrix. Each business value is determined by the combination of the defect’s severity and its likelihood of occurrence.</p>
-                      <img src="assets\img\04-workflows\03-logging-defects\08-risk-assessment-matrix.png" alt="Logging Defects: Risk Assessment Matrix" class="img-fluid img-container" />
-                      <p></p>
-                    </li>
-                    <li>
-                      <h5>Custom Fields</h5>
-                      <p>
-                        Custom fields are defined in the targetprocess admin configuration section, and these can be of several types such as drop-down list, free-text field, boolean control, computed field (calculated from the values of other fields
-                        by a defined formula) etc. The most notable custom fields are:
-                      </p>
-                      <ul>
-                        <li>
-                          <strong>Resolution:</strong><span> Defines the reason for moving defects into certain states. Common uses of the Resolution field include:</span>
-                          <ul>
-                            <li>After a developer fixes a defect, they will mark it Resolved and set the Resolution to Fixed.</li>
-                            <li>When a developer believes the defect is invalid, they will mark it Resolved and set the Resolution to Invalid.</li>
-                            <li>After a defect fails retesting, a QA person will move it back to the Confirmed state and set the Resolution to Reopened.</li>
-                            <li>When a developer needs more information on a defect from a QA person, they will mark it Resolved and set the Resolution to Need More Info.</li>
-                          </ul>
-                          <span>Several other values are available for the Resolution field, however these are less commonly used.</span>
-                        </li>
-                        <li>
-                          <strong>Support Ticket ID:</strong
-                          ><span>
-                            If a request for QA review includes a support ticket ID, then that ID needs to be copied over to the defect logged off the back of that request. More information about this is available in the section detailing the
-                            Requests For QA Review workflow.</span
-                          >
-                        </li>
-                        <li>
-                          <strong>State Of Fix:</strong
-                          ><span>
-                            The value of this field never needs to be set manually; it is controlled by an integration with GitLab, and the value will automatically be set to “Fix is on Development” when the fix for the defect has been merged to the
-                            development branch and to “Fix is on Development and Production” when the fix for the defect has been deployed to the production environment.</span
-                          >
-                        </li>
-                      </ul>
-                      <p></p>
-                      <img src="assets\img\04-workflows\03-logging-defects\09-custom-fields.png" alt="Logging Defects: Custom Fields" class="img-fluid img-container" />
-                      <p></p>
-                    </li>
-                    <li>
-                      <h5>Relations</h5>
-                      <p>Relations in targetprocess are symmetrical links that connect two entities. They can be of one of five types: Relation, Dependency, Blocker, Link and Duplicate.</p>
-                      <p>A relation between two targetprocess entities is similar to a flow, so if a defect was logged off the back of a request, for instance, then the defect will be linked by an outbound relation from the request.</p>
-                      <p></p>
-                      <img src="assets\img\04-workflows\03-logging-defects\10-outbound-relations.png" alt="Logging Defects: Outbound Relations" class="img-fluid img-container" />
-                      <p></p>
-                      <p>Because relations are symmetrical, the above means that in the defect context the request is linked by an inbound relation to the defect.</p>
-                      <p></p>
-                      <img src="assets\img\04-workflows\03-logging-defects\11-inbound-relations.png" alt="Logging Defects: Inbound Relations" class="img-fluid img-container" />
-                      <p></p>
-                      <p>
-                        An easy way to determine the context of one or more relations is to think of the grey circle at the middle of the diagram as the current entity. In our examples above, in the request context the defect is an outbound entity
-                        while in the defect context the request is an inbound entity.
-                      </p>
-                      <p></p>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>Grammar/Punctuation/Syntax/Semantics</h4>
-                  <ul>
-                    <li>
-                      <strong>Grammar:</strong
-                      ><span>
-                        Please always try to use correct grammar when logging defects and/or creating comments. To facilitate this, the Grammarly add-on can be installed in your browser. More information about Grammarly is available in the Tools
-                        section of this document. Examples of commonly made grammatical errors include:</span
-                      >
-                      <ul>
-                        <li>The incorrect use of homophones such as Then/Than, Their/There/They’re, To/Too, Your/You’re, Of/Off.</li>
-                        <li>
-                          Using nouns instead of verbs. Examples: a) <s>the user is unable to login</s> the user is unable to log in; b) <s>the user is experiencing issues attempting to setup the configuration</s> the user is experiencing issues
-                          attempting to set up the configuration; c) <s>we will rollout a new version of the application</s> we will roll out a new version of the application;
-                        </li>
-                        <li>Incorrectly capitalized acronyms or initialisms. Examples: a) <s>Json</s> JSON; b) <s>Asap</s> ASAP;</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Punctuation:</strong><span> Correct punctuation matters, so always try to keep on top of that. Grammarly, most of the time, can help with this as well. Examples of commonly made punctuation mistakes include:</span>
-                      <ul>
-                        <li>Not ending sentences with a period, or an exclamation/question mark where appropriate.</li>
-                        <li>Using dashes for hyphens and vice versa. A hyphen (-) is a punctuation mark that’s used to join words or parts of words, whereas a dash (–) is longer than a hyphen and is commonly used to indicate a range or a pause</li>
-                        <li>Using apostrophes in plural words. Examples: a) <s>SMS's</s> SMSs; b) <s>ID's</s> IDs;</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Syntax:</strong
-                      ><span>
-                        Syntax is essentially about what word comes before and after another word. Please make sure your sentences don't end up sounding like tongue twisters. English can be weird; it can be understood through tough thorough thought,
-                        though.</span
-                      >
-                    </li>
-                    <li><strong>Semantics:</strong><span> Semantics are concerned with the meaning of signifiers such as words, phrases, signs, and symbols. In terms of meaning, some very important guidelines on logging defects are:</span></li>
+                    <li>Current Major Version &amp; Previous Major Version</li>
                     <ul>
-                      <li>
-                        <span
-                          >Never log any defects that sound like requests for the developer. An incorrect defect title would be <em>“<s>Please change the color of this text.</s>”</em>, however the correct title could be
-                          <em>"Inconsistent text color being used."</em>.</span
-                        >
-                      </li>
-                      <li>
-                        <span
-                          >Never be subjective while describing a defect. An incorrect description would be <em>“<s>When I logged in, I was presented with an error message.</s>”</em>, however the correct description could be
-                          <em>“After logging in, it was observed that an error occurs.”</em>. Always try to avoid describing defects in the first person, and always try to be as objective as possible.</span
-                        >
-                      </li>
+                      <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
                     </ul>
-                    <span
-                      >I will end this section with a programming joke: A woman asks her husband, a programmer, “Could you please go shopping for me, and buy one carton of milk? And if they have eggs, please get six.” A short time later, the
-                      programmer comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span
-                    >
                   </ul>
-                </li>
-                <p></p>
-                <li>
-                  <h4>Comments</h4>
-                  <p>While creating comments in targetprocess, it is possible to tag users or entities in the comment body.</p>
-                  <p>
-                    Tagging users can be done by inserting an @ sign followed by starting to type the user’s name and then selecting them from an auto-complete list; doing so will cause the tagged user to receive a notification of the newly created
-                    comment.
-                  </p>
-                  <p>Tagging entities can be done by typing “ID: ” followed by the targetprocess ID of the entity.</p>
-                  <img src="assets\img\04-workflows\03-logging-defects\12-comment-tags.png" alt="Logging Defects: Comment Tags" class="img-fluid img-container" />
-                  <p></p>
-                  <p>Tagged users and entities will resolve to interactive elements as soon as the comment has been saved. These can now be clicked to navigate to the tagged user and/or entity.</p>
-                  <img src="assets\img\04-workflows\03-logging-defects\13-comment-links.png" alt="Logging Defects: Comment Links" class="img-fluid img-container" />
-                  <p></p>
-                  <p>
-                    While tagging allows users to send notifications to other users by including them in the comment, another way of sending notifications to other users that a new comment has been created is to use the checkboxes under the comment
-                    editor. By ticking these, email notifications can be sent to the card owner, the people assigned to the card, and/or the members of the project in which the card was created.
-                  </p>
-                  <img src="assets\img\04-workflows\03-logging-defects\14-comment-notifications.png" alt="Logging Defects: Comment Notifications" class="img-fluid img-container" />
-                  <p></p>
-                  <p>
-                    Lastly, in order to make the best use of the comments section, please make sure that you are using the comment sort order that is right for you. This is a matter of personal preference and only needs to be done once, as it is a
-                    per-user setting and not a per-card setting. I personally prefer oldest first, because it works better for me to be able to go through the comment history from the top to the bottom.
-                  </p>
-                  <img src="assets\img\04-workflows\03-logging-defects\15-comment-ordering.png" alt="Logging Defects: Comment Ordering" class="img-fluid img-container" />
-                  <p></p>
-                </li>
-                <p></p>
-              </ul>
-            </li>
-            <li id="4.4"><h3>Test Cycles</h3></li>
-          </ul>
-        </li>
-        <br />
-        <li>
-          <h2>Information Library</h2>
-          <ul>
-            <li id="5.1">
-              <h3>Levels Of Testing</h3>
-              <p>Software Testing Levels are the different stages of the Software Development Life Cycle where testing is conducted. There are four levels of software testing: Unit >> Integration >> System >> Acceptance.</p>
-              <img src="assets\img\05-information-library\01-levels-of-testing\01-the-four-levels-of-testing.png" alt="Information Library: Levels Of Testing" class="img-fluid img-container" />
-              <p></p>
-              <p>Some tend to include Regression Testing as a separate level of software testing but that is a misconception. Regression Testing is, in fact, just a type of testing that can be performed at any of the four main levels.</p>
-              <ul>
-                <li>
-                  <strong>Unit Testing:</strong
-                  ><span>
-                    Unit Tests are typically automated tests written and run by software developers to ensure that the units of an application (methods/classes/etc.) meet their design and behave as intended. Since a component comprises multiple (and
-                    often many) units, error detection per unit is simple, cost-effective and time-efficient. Unit Testing ensures that both the functional and the non-functional behaviour of the component are designed as per the specification.</span
-                  >
-                  <p></p>
-                  <span>Some of the key considerations for Unit Tests are:</span>
+                  <li>Browser (Patient\OH Portal)</li>
                   <ul>
-                    <li><span>Each component is tested in isolation from the rest of the system.</span></li>
-                    <li><span>Unit Testing is usually performed by developers before handing over the code to QA.</span></li>
-                    <li><span>Unit Testing is usually done in the developer’s local environment, before the code is propagated to higher environments.</span></li>
-                    <li><span>Defects found at the Unit Testing stage are fixed there and then, and there is no formal defect management process that is followed.</span></li>
-                  </ul>
-                </li>
-                <p></p>
-                <li>
-                  <strong>Integration Testing:</strong
-                  ><span>
-                    Integration Testing is carried out once Unit Testing is complete. It focuses on the interaction between the components or systems being integrated. Integration Testing can be of two types, Component Integration Testing or System
-                    Integration Testing.</span
-                  >
-                  <p></p>
-                  <ul>
-                    <li>
-                      <strong>Component Integration Testing:</strong
-                      ><span> Focuses on the interaction between the components of a system. For instance, in meddbase, the interaction between raising invoices and making payments can be classified as Component Integration Testing.</span>
-                    </li>
-                    <li>
-                      <strong>System Integration Testing:</strong
-                      ><span>
-                        Focuses on the interaction between the application under test and micro-services or other systems. Typically, all third-party integrations are covered by System Integration Testing. Examples of micro-services and of other
-                        systems that integrate with meddbase are Xero, SagePay and the PACS Service.</span
-                      >
-                    </li>
-                    <p></p>
-                    <span>Some of the key considerations for Integration Testing are:</span>
+                    <li>Current Major Version &amp; Previous Major Version</li>
                     <ul>
-                      <li>
-                        <span>Integration Testing ensures that both the functional and the non-functional behaviour of the integrated system or component are as per design.</span>
-                      </li>
-                      <li>
-                        <span>Interfaces, APIs, micro-services and third-party integrations are typically covered by Integration Testing.</span>
-                      </li>
-                      <li>
-                        <span
-                          >Integration testing is carried out as soon as two interacting components are ready to test, without waiting for the entire system to be ready. This ensures early detection of defects and helps in tracking the defects down
-                          to a particular integration.</span
-                        >
-                      </li>
+                      <li><a href="https://en.wikipedia.org/wiki/Firefox_version_history">Mozilla Firefox</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a></li>
+                    </ul>
+                    <li>Current Major Version Only</li>
+                    <ul>
+                      <li><a href="https://en.wikipedia.org/wiki/Safari_version_history">MacOS Safari</a></li>
                     </ul>
                   </ul>
-                  <p></p>
-                  <img src="assets\img\05-information-library\01-levels-of-testing\02-integration-testing.png" alt="Information Library: Levels Of Testing: Integration Testing" class="img-fluid img-container" />
-                  <p></p>
-                  <p>The most common approaches to Integration Testing are:</p>
+                  <li>WebDAV</li>
                   <ul>
                     <li>
-                      Big Bang: An approach to Integration Testing where all or most of the units are combined together and tested at one go. This approach is taken when the testing team receives the entire software in a bundle. So what is the
-                      difference between Big Bang Integration Testing and System Testing? The former tests only the interactions between the components while the latter tests the entire system.
+                      <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2016</a>, <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 2019</a>,
+                      <a href="https://en.wikipedia.org/wiki/History_of_Microsoft_Office">Microsoft Office 365</a>
                     </li>
-                    <li>
-                      Top-Down: An approach to Integration Testing where top-level units are tested first and lower-level units are tested step by step after that. This approach is taken when a top-down development approach is followed. Stubs are
-                      needed to simulate lower-level units which may not be available during the initial phases of testing.
-                    </li>
-                    <li>
-                      Bottom-Up: An approach to Integration Testing where bottom-level units are tested first and upper-level units step by step after that. This approach is taken when a bottom-up development approach is followed. Drivers are needed
-                      to simulate higher-level units which may not be available during the initial phases of testing.
-                    </li>
-                    <li>Hybrid/Sandwich: An approach to Integration Testing which is a combination of the Top-Down and Bottom-Up approaches.</li>
                   </ul>
-                  <p></p>
-                  <p>
-                    Test Stubs and Test Drivers act as substitutes to incomplete or missing components. They do not implement the entire programming logic of the components but just simulate data communication with the calling components. Stubs are
-                    called by the components under test, while Drivers call the components under test.
-                  </p>
-                  <img src="assets\img\05-information-library\01-levels-of-testing\03-lack-of-integration-testing.webp" alt="Information Library: Levels Of Testing: Integration Testing: Lack Of Integration Testing" class="img-fluid img-container" />
-                  <p></p>
-                </li>
-                <li>
-                  <strong>System Testing:</strong
-                  ><span>
-                    Is the process in which a QA team evaluates how the various components of an application interact together in the full, integrated system or application.</span
-                  >
-                  <p></p>
-                  <p>
-                    System testing verifies that an application performs tasks as designed. This step, a kind of black box testing, focuses on the functionality of an application. System testing, for example, might check that every kind of user input
-                    produces the intended output across the application.
-                  </p>
-                  <p>
-                    With system testing, a QA team gauges if an application meets all of its requirements, which includes technical, business and functional requirements. To accomplish this, the QA team might utilize a variety of test types,
-                    including performance, usability, load testing and functional tests.
-                  </p>
-                </li>
-                <li>
-                  <strong>Acceptance Testing:</strong
-                  ><span> A level of software testing where a system is tested for acceptability. The purpose of this test is to evaluate the system’s compliance with the business requirements and assess whether it is acceptable for delivery.</span>
-                </li>
+                  <li>Document Manager</li>
+                  <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 8.1</a>, <a href="https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions">Windows 10</a></li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="1.2">
+            <button class="btn btn-outline-dark mt-2 mb-2" id="application-structure-button" type="button" data-toggle="collapse" data-target="#application-structure">
+              <h3>Structure</h3>
+            </button>
+            <div class="collapse" id="application-structure">
+              <img src="assets\img\01-application\02-structure\01-application-structure.png" alt="Application: Structure" class="img-fluid img-container" />
+            </div>
+            <p></p>
+          </li>
+          <li id="1.3">
+            <h3>Cross-System User Accounts</h3>
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        <h2>Productivity</h2>
+        <ul>
+          <li id="2.1">
+            <h3>Bookmarks</h3>
+            <p>
+              A comprehensive collection of bookmarks linking to a myriad of useful sites and resources can be downloaded by clicking the button below. The bookmarks are in both HTML and JSON format, so they should be compatible with most browsers.
+            </p>
+            <form method="get" action="assets\download\bookmarks-2019-06-26.zip">
+              <button type="submit" class="btn btn-outline-dark download-button"><i class="fas fa-download"></i><span>&nbsp;&nbsp;</span>Download Bookmarks</button>
+            </form>
+            <p></p>
+            <p>
+              It is recommended, but not required, that you clear all your current bookmarks before importing the ones attached to this QA Handbook. This is because the imported bookmarks will be added to your already-existing bookmarks, which may
+              result in bookmark duplication.
+            </p>
+          </li>
+          <li id="2.2">
+            <h3>Outlook</h3>
+          </li>
+          <li id="2.3">
+            <h3>Windows</h3>
+            <ul>
+              <li>
+                <strong>Custom Hotkeys:</strong><span>
+                  In Windows, it is possible to assign hotkeys for opening applications by setting these on one or more shortcuts linking to the application executable. This can be done by right-clicking the shortcut, opening its properties and
+                  typing the hotkeys inside the Shortcut Key field.</span>
+                <p></p>
+                <p>One thing to note is that Windows has some built-in hotkeys that do various things so, in order to not overlap with those, it is recommended that the custom hotkeys use the format CTRL + SHIFT + ALT + KEY.</p>
+                <img src="assets\img\02-productivity\03-windows\01-hotkeys.png" alt="Productivity: Windows: Hotkeys" class="img-fluid img-container" />
                 <p></p>
                 <p>
-                  Internal Acceptance Testing (also known as <strong>Alpha Testing</strong>) is performed by members of the organization that developed the software but who are not directly involved in the project (Development or Testing). Usually,
-                  it is the members of Product Management, Sales and/or Customer Support.
+                  The problem with hotkeys, however, is that, due to the way Windows operates, these binds are not automatically loaded on boot, which means they will only work after setting them up and until starting a new Windows session (e.g.
+                  rebooting the computer). Luckily, there is a workaround for this.
                 </p>
+                <p>
+                  Windows doesn’t run a system-wide search for shortcut files while restoring hotkey assignments; it does however search in specific pre-defined directories, and one of these directories is the Start Menu folder. This means that any
+                  shortcuts in a sub-directory of the current user’s Start Menu folder will have their hotkeys loaded at login.
+                </p>
+                <p>The hotkeys folder can be created either manually or by running the following PowerShell commands in an elevated (admin) shell:</p>
+                <div class="shell-commands-parent">
+                  <div class="shell-commands-child">
+                    <code>$Path="$Env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu"</code>
+                    <br />
+                    <code>New-Item -Path "$Path\_hotkeys" -ItemType Directory</code>
+                    <br />
+                    <code>Set-Location -Path "$Path\_hotkeys"</code>
+                    <br />
+                    <code>Invoke-Item .</code>
+                  </div>
+                </div>
                 <p></p>
-                <span>External Acceptance Testing is performed by people who are not employees of the organization that developed the software.</span>
-                <ul>
-                  <li>Customer Acceptance Testing is performed by the customers of the organization that developed the software, if they are the ones who asked the organization to develop the software.</li>
-                  <li>User Acceptance Testing (also known as <strong>Beta Testing</strong>) is performed by the end users of the software. They can be the customers themselves or the customers’ customers.</li>
-                </ul>
+                <p>Once this folder has been created, simply copy inside all the shortcut files with hotkey assignments.</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>Tools</h2>
+        <ul>
+          <li id="3.1">
+            <h3>targetprocess</h3>
+          </li>
+          <li id="3.2">
+            <h3>mattermost</h3>
+          </li>
+          <li id="3.3">
+            <h3>Skype For Business</h3>
+          </li>
+          <li id="3.4">
+            <h3>Greenshot</h3>
+          </li>
+          <li id="3.5">
+            <h3>OBS Studio</h3>
+          </li>
+          <li id="3.6">
+            <h3>Grammarly</h3>
+          </li>
+          <li id="3.7">
+            <h3>LastPass</h3>
+          </li>
+          <li id="3.8">
+            <h3>OneDrive For Business</h3>
+          </li>
+          <li id="3.9">
+            <h3>Mirth Connect</h3>
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        <h2>Workflows</h2>
+        <ul>
+          <li id="4.1">
+            <h3>Requests For QA Review</h3>
+          </li>
+          <li id="4.2">
+            <h3>Generating Test Data</h3>
+            <ul>
+              <li>
+                <p>
+                  <strong>All-Purpose Test Data:</strong><span>
+                    One of the easiest to use realistic data generators publicly available on the Internet is <a href="https://www.mockaroo.com/">mockaroo</a> which also has a very generous free tier. It can generate, at the time of writing this,
+                    143 type of data ranging from names, addresses and NHS numbers to avatar URLs, drug names and company names. Mockaroo also supports regular expressions, so users can create their own data types.</span>
+                </p>
+                <p>
+                  In order to generate data, simply add the required columns, select an output type and then either download or preview the results. The output type is a matter of personal preference; I personally lean towards JSON, however a table
+                  format such as Excel may be easier to look at for most people.
+                </p>
+                <img src="assets\img\04-workflows\02-generating-test-data\01-mockaroo-configuration.png" alt="Generating Test Data: Mockaroo Configuration" class="img-fluid img-container" />
                 <p></p>
-              </ul>
-              <p>
-                Lastly, to reiterate through the four levels of testing, we could use the following analogy: During the process of manufacturing a ballpoint pen, the cap, the body, the tail and clip, the ink cartridge and the ballpoint are produced
-                separately. Unit Testing is then performed on the individual components. When two or more units are ready, they are assembled and Integration Testing is performed to assess the interactions between the integrated components. When the
-                complete pen is integrated, System Testing is performed. Once System Testing is complete, Acceptance Testing is performed so as to confirm that the ballpoint pen meets all the requirements and that it's ready to be made available to
-                the end-user.
-              </p>
-            </li>
-            <li id="5.2"><h3>Cycle Time, TAKT Time, Lead Time</h3></li>
-            <li id="5.3"><h3>Retesting VS Regression Testing</h3></li>
-            <li id="5.4"><h3>Error, Defect, Failure, Bug</h3></li>
-            <li id="5.5">
-              <h3>Cases Styles</h3>
-              <ul>
-                <li>
-                  <strong>Sentence Case:</strong><span> The quick brown fox jumps over the lazy dog</span>
-                  <p>
-                    A mixed-case style in which the first word of the sentence is capitalised, as well as proper nouns and other words as required by a more specific rule. This is generally equivalent to the baseline universal standard of formal
-                    English orthography.
-                  </p>
-                </li>
-                <li>
-                  <strong>Title Case (Capital Case, Headline Style):</strong><span> The Quick Brown Fox Jumps over the Lazy Dog</span>
-                  <p>
-                    A mixed-case style with all words capitalised, except for certain subsets (particularly articles and short prepositions and conjunctions) defined by rules that are not universally standardised. The standardisation is only at the
-                    level of house styles and individual style manuals. In text processing, title case usually involves the capitalisation of all words irrespective of their part of speech. This simplified variant of title case is also known as start
-                    case or initial caps.
-                  </p>
-                </li>
-                <li>
-                  <strong>All Caps (All Uppercase):</strong><span> THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</span>
-                  <p>
-                    A unicase style with capital letters only. This can be used in headings and special situations, such as for typographical emphasis in text made on a typewriter. With the advent of the Internet, the all-caps style is more often
-                    used for emphasis; however, it is considered poor netiquette by some to type in all capitals, and said to be tantamount to shouting. Long spans of Latin-alphabet text in all upper-case are harder to read because of the absence of
-                    the ascenders and descenders found in lower-case letters, which can aid recognition. In some cultures it is common to write family names in all caps to distinguish them from the given names, especially in identity documents such
-                    as passports.
-                  </p>
-                </li>
-                <li>
-                  <strong>Small Caps:</strong><span class="small-caps"> The quick brown fox jumps over the lazy dog</span>
-                  <p>
-                    Similar in form to capital letters but roughly the size of a lower-case "x", small caps can be used instead of lower-case letters and combined with regular caps in a mixed-case fashion. This is a feature of certain fonts such as
-                    Copperplate Gothic. According to various typographical traditions, the height of small caps can be equal to or slightly larger than the x-height of the typeface (the smaller variant is sometimes called petite caps and may also be
-                    mixed with the larger variant). Small caps can be used for acronyms, names, mathematical entities, computer commands in printed text, business or personal printed stationery letterheads, and other situations where a given phrase
-                    needs to be distinguished from the main text.
-                  </p>
-                </li>
-                <li>
-                  <strong>All Lowercase:</strong><span> the quick brown fox jumps over the lazy dog</span>
-                  <p>
-                    A unicase style with no capital letters. This is sometimes used for artistic effect, such as in poetry. Also commonly seen in computer languages, and in informal electronic communications such as SMS language and instant messaging
-                    (avoiding the Shift key, to type more quickly).
-                  </p>
-                </li>
-                <li>
-                  <strong>Camel Case:</strong><span> theQuickBrownFoxJumpsOverTheLazyDog</span>
-                  <p>
-                    Spaces and punctuation are removed and the first letter of each word is capitalised. When the first letter of the first word is lowercase ("iPod", "eBay", etc.), the case is usually known as Lower Camel Case (illustratively:
-                    camelCase).
-                  </p>
-                </li>
-                <li>
-                  <strong>Pascal Case:</strong><span> TheQuickBrownFoxJumpsOverTheLazyDog</span>
-                  <p>
-                    Spaces and punctuation are removed and the first letter of each word is capitalised. If this includes the first letter of the first word ("MasterCard", "PowerPoint", etc.), the case is usually called Upper Camel Case, Pascal Case
-                    (illustratively: PascalCase), or Bumpy Case.
-                  </p>
-                </li>
-                <li>
-                  <strong>Snake Case:</strong><span> the_quick_brown_fox_jumps_over_the_lazy_dog</span>
-                  <p>
-                    Punctuation is removed and spaces are replaced by single underscores. Normally the letters share the same case (e.g. "UPPER_CASE_EMBEDDED_UNDERSCORE" or "lower_case_embedded_underscore"), but the case can be mixed as well. The
-                    style may also be called Pothole Case, especially in Python programming, in which this convention is often used for naming variables. Illustratively, it may be rendered snake_case or pothole_case. When all-upper-case, it may be
-                    referred to as Screaming Snake Case (or SCREAMING_SNAKE_CASE).
-                  </p>
-                </li>
-                <li>
-                  <strong>Kebab Case:</strong><span> the-quick-brown-fox-jumps-over-the-lazy-dog</span>
-                  <p>
-                    Similar to Snake Case, above, except hyphens rather than underscores are used to replace spaces (illustratively: kebab-case). It is also known as Spinal Case, Param Case, LISP Case, and Dash Case. If every word is capitalised, the
-                    style is known as Train Case (or TRAIN-CASE).
-                  </p>
-                </li>
-                <li>
-                  <strong>Studly Caps:</strong><span> tHeqUicKBrOWnFoXJUmpsoVeRThElAzydOG</span>
-                  <p>
-                    Mixed case with no semantic or syntactic significance to the use of the capitals. Sometimes only vowels are upper case, at other times upper and lower case are alternated, but often it is simply random. The name comes from the
-                    sarcastic or ironic implication that it was used in an attempt by the writer to convey their own coolness. It is also used to mock the violation of standard English case conventions by marketers in the naming of computer software
-                    packages, even when there is no technical requirement to do so – e.g., Sun Microsystems' naming of a windowing system NeWS. Illustrative naming of the style is, naturally, random: stUdlY cAps, StUdLy CaPs, etc.
-                  </p>
-                </li>
-              </ul>
+                <p>The number of results is defined by the numbers of rows set to generate. Only up to 1000 rows can be generated as part of the free tier, however that is more than enough for most non-enterprise users.</p>
+                <img src="assets\img\04-workflows\02-generating-test-data\02-mockaroo-results.png" alt="Generating Test Data: Mockaroo Results" class="img-fluid img-container" />
+                <p></p>
+                <p>
+                  Another very powerful tool for generating test data is faker.js, which has the advantage of being open source. Setting it up involves a bit of technical complexity, however comprehensive instructions on setup and usage can be
+                  found on the <a href="https://github.com/marak/faker.js">faker.js GitHub page</a>. The library is also available as an <a href="https://www.npmjs.com/package/faker">NPM package</a>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Bank Cards:</strong><span>
+                    Bank card details that can be used for testing purposes are provided by the companies that develop the products meddbase integrates with. Online payments in meddbase currently go through SagePay which provide a wide range of
+                    <a href="https://www.sagepay.co.uk/support/12/36/test-card-details-for-your-test-transactions">test card details</a> usable for test transactions.</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Phone Numbers:</strong><span>
+                    Mobile numbers in the range 07700 900000 to 07700 900999 can be used for testing purposes as these are reserved by Ofcom, which is the regulator for communications services in the United Kingdom. Ofcom also provides
+                    <a href="https://www.ofcom.org.uk/phones-telecoms-and-internet/information-for-industry/numbering/numbers-for-drama">a range of geographic landline numbers</a> that can be used for testing.</span>
+                </p>
+                <p>
+                  Please note that none of these phone numbers are allocated to communications providers, so calling or messaging them will not work, however they are in the correct format and using them ensures that calls or text messages are not
+                  received by real people which is very important because text messages or automated calls may potentially contain sensitive test data.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Email Addresses:</strong><span>
+                    There are many websites that provide disposable email address services. Some of the most notable ones are <a href="https://tempail.com/">tempail.com</a>, <a href="https://tempmail.net/">tempmail.net</a> and
+                    <a href="https://temp-mail.org/">temp-mail.org</a>. These can be used securely to test email sending functionality to and from meddbase.</span>
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li id="4.3">
+            <h3>Logging Defects</h3>
+            <ul>
+              <li>
+                <h4>Structure</h4>
+                <p>The structure of a defect card in targetprocess should be in accordance with the following guidelines:</p>
+                <p>The body of the defect starts with a detailed description. Please be sure to include all the relevant information, while avoiding extra unneeded information that may confuse the reader.</p>
+                <p>The description is separated from the steps to reproduce by a horizontal line. This can either be inserted via the user interface of the editor, or by adding a &lt;hr&gt; tag while inspecting the source of the defect body.</p>
+                <p>
+                  The second section contains details on where the issue reproduces and what the steps to reproduce are. Credentials and environment variables are typed in on a single line in the format “system > user > password (optional) >
+                  browser (optional)”. The browser is only required if the issue is browser specific. Examples include “system.meddbase.com > MMS.User@HCA > Mozilla Firefox” or “qa.meddbase.com > BRL.Vlad > myPassword”. Following this line are the
+                  steps to reproduce, which must be typed on sequentially numbered rows. Please don’t skip any logical step, while also making sure that the STR are short and concise, as not to confuse the reader. Ideally, the steps to reproduce
+                  should be a list element; HTML lists can be inserted into the defect description via the text editor user interface.
+                </p>
+                <p>
+                  If additional information is available, such as a stack trace, then it is separated from the previous sections by another horizontal line per block of additional information. Most often, stack traces will preserve the formatting
+                  of the HTML element that they were copied from; to avoid copying this formatting to the defect body, please first remove it. One of the easiest ways of accomplishing this while also preserving newline characters is to paste into a
+                  text document, select all, copy again, and finally paste into targetprocess.
+                </p>
+                <img src="assets\img\04-workflows\03-logging-defects\01-structure.png" alt="Logging Defects: Structure" class="img-fluid img-container" />
+              </li>
               <p></p>
-            </li>
-            <li id="5.6">
-              <h3>Continuous Integration/Delivery/Deployment</h3>
-              <ul>
-                <li>
-                  <strong>Continuous Integration:</strong
-                  ><span>
-                    Developers practicing continuous integration merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so,
-                    you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.</span
-                  >
-                  <p></p>
-                  <p>Continuous integration puts a great emphasis on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.</p>
-                </li>
-                <li>
-                  <strong>Continuous Delivery:</strong
-                  ><span>
-                    Continuous delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have
-                    automated your release process and you can deploy your application at any point of time by clicking on a button.</span
-                  >
-                  <p></p>
-                  <p>
-                    In theory, with continuous delivery, you can decide to release daily, weekly, fortnightly, or whatever suits your business requirements. However, if you truly want to get the benefits of continuous delivery, you should deploy to
-                    production as early as possible to make sure that you release small batches that are easy to troubleshoot in case of a problem.
-                  </p>
-                </li>
-                <li>
-                  <strong>Continuous Deployment:</strong
-                  ><span>
-                    Continuous deployment goes one step further than continuous delivery. With this practice, every change that passes all stages of your production pipeline is released to your customers. There's no human intervention, and only a
-                    failed test will prevent a new change to be deployed to production.</span
-                  >
-                  <p></p>
-                  <p>
-                    Continuous deployment is an excellent way to accelerate the feedback loop with your customers and take pressure off the team as there isn't a Release Day anymore. Developers can focus on building software, and they see their work
-                    go live minutes after they've finished working on it.
-                  </p>
-                </li>
-                <img
-                  src="assets\img\05-information-library\07-continuous-integration-delivery-deployment\01-continuous-integration-delivery-deployment.png"
-                  alt="Information Library: Continuous Integration/Delivery/Deployment"
-                  class="img-fluid img-container"
-                />
+              <li>
+                <h4>Attachments</h4>
+                <p>
+                  It is preferable that attachments are captured via Greenshot (for image) and OBS Studio (for video); this is explained in more detail in the Tools section of this handbook. Video attachments can only be uploaded as files, while
+                  image attachments can be either uploaded as files or pasted in comments as inline images. The golden rule is: If an inline image takes up too much screen space, then upload it as a file instead. Too much space would be an image
+                  that would cause the comment box to expand in height more than twice the default size.
+                </p>
+                <img src="assets\img\04-workflows\03-logging-defects\02-attachments.png" alt="Logging Defects: Attachments" class="img-fluid img-container" />
                 <p></p>
-                <p>To put it simply continuous integration is part of both continuous delivery and continuous deployment. And continuous deployment is like continuous delivery, except that releases happen automatically.</p>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <br />
+                <p>When uploading attachments, please make sure that the file name is a timestamp in the format "YYYY-MM-DD_HH-MM-SS". This can be configured in the software product used to capture the attachment.</p>
+              </li>
+              <li>
+                <h4>Defect Parameters</h4>
+                <p>There are many built-in as well as custom fields that can be set while logging a defect. The most commonly used ones are the following:</p>
+                <ul>
+                  <li>
+                    <h5>State</h5>
+                    <p>Throughout its lifecycle, a defect will transition through several states.</p>
+                    <ul>
+                      <li><strong>New:</strong><span> A newly logged defect. Not yet confirmed so it could potentially be invalid, a duplicate, it may need more information, etc.</span></li>
+                      <li><strong>Confirmed:</strong><span> A defect that has been confirmed to be valid by one of the developers.</span></li>
+                      <li><strong>In Progress:</strong><span> A developer has started fixing this defect.</span></li>
+                      <li>
+                        <strong>Awaiting Merge:</strong><span> A developer has finished fixing this defect and is now waiting for the changes to be merged to the branch that will be deployed to the environment on which the defect needs to be
+                          retested.</span>
+                      </li>
+                      <li>
+                        <strong>Parked:</strong><span>
+                          A defect ends up in this state if something causes the development work to be put on hold for an undetermined amount of time. An example of why this may happen could be that a defect was logged for a component that will
+                          soon be replaced.</span>
+                      </li>
+                      <li>
+                        <strong>Resolved:</strong><span>
+                          The defect has been fixed, and the fix has been deployed and is available for retesting and regression testing. Defects previously in the Awaiting Merge state are automatically moved to the Resolved state once the changes
+                          have been deployed; this works via an integration between targetprocess and GitLab.</span>
+                      </li>
+                      <li><strong>Awaiting Merge To Production:</strong><span> This state is for defects that have been fix verified and that are in the queue to be deployed to production sites.</span></li>
+                      <li>
+                        <strong>Done:</strong><span>
+                          This state is automated in the same way that the Resolved state is; once the fix has been verified, while the defect is in the Awaiting Merge To Production state, the card will automatically be marked Done by the GitLab
+                          integration after the changes have been deployed to production sites.</span>
+                      </li>
+                    </ul>
+                    <p></p>
+                    <img src="assets\img\04-workflows\03-logging-defects\03-states.png" alt="Logging Defects: States" class="img-fluid img-container" />
+                    <p></p>
+                    <p>
+                      Some states require the user to leave a comment when moving the card to that state. This comment is plain-text only, so if tags, URLs, screenshots etc. need to be included in this comment then please enter the text-only part
+                      first so that targetprocess allows changing the state and then go back to your comment and update it with any edits that may be required.
+                    </p>
+                    <img src="assets\img\04-workflows\03-logging-defects\04-required-state-comments.png" alt="Logging Defects: Required State Comments" class="img-fluid img-container" />
+                    <p></p>
+                  </li>
+                  <li>
+                    <h5>Assignments</h5>
+                    <p>
+                      Teams can be assigned to defects and, in most cases, it will only be possible to assign a single team per defect. Assigning a team to a defect, and generally to a targetprocess entity, can kick off a team workflow which can
+                      divide a state into multiple sub-states, as can be seen below. Only assign teams to targetprocess entities if instructed to do so by the QA manager.
+                    </p>
+                    <img src="assets\img\04-workflows\03-logging-defects\05-team-assignments.png" alt="Logging Defects: Team Assignments" class="img-fluid img-container" />
+                    <p></p>
+                    <p>
+                      Apart from team assignments, individual people can be assigned to specific roles. More than one person can be assigned to a single role. Only assign individual people to targetprocess entities if instructed to do so by the QA
+                      manager.
+                    </p>
+                    <p>
+                      The people assigned to the role that is responsible for the defect’s current state will appear in a heavier font. For example, in the next image, the defect is in the Parked state and the role responsible for the Parked state
+                      in this example is the Support Person role, so Colin’s name appears in bold text.
+                    </p>
+                    <img src="assets\img\04-workflows\03-logging-defects\06-assignments.png" alt="Logging Defects: Assignments" class="img-fluid img-container" />
+                    <p></p>
+                  </li>
+                  <li>
+                    <h5>Severities & Business Values</h5>
+                    <p>The severity and business value of a defect dictate the priority of fixing that defect. Defect severities are 'set in stone', while business values are determined by a Risk Assessment Matrix.</p>
+                    <p></p>
+                    <img src="assets\img\04-workflows\03-logging-defects\07-severities-and-business-values.png" alt="Logging Defects: Severities & Business Values" class="img-fluid img-container" />
+                    <p></p>
+                    <p>The seven severities currently defined in targetprocess are the following:</p>
+                    <ul>
+                      <li>
+                        <strong>Enhancement:</strong><span>
+                          This severity is reserved for nice-to-have features. Defects that usually fall into this category are quality-of-life changes that enhance the user's experience. Occasionally, missing features that would improve on an MVP
+                          (Minimum Viable Product) may fall into this category as well.</span>
+                      </li>
+                      <li><strong>Trivial:</strong><span> This severity is mostly for typos and minute cosmetic defects.</span></li>
+                      <li><strong>Minor:</strong><span> Reserved for minor functionality issues and more noticeable cosmetic defects.</span></li>
+                      <li><strong>Average:</strong><span> The default defect severity. Average is used for garden-variety functionality issues.</span></li>
+                      <li><strong>Major:</strong><span> Reserved for major functionality issues. These defects will usually throw an exception.</span></li>
+                      <li>
+                        <strong>Critical:</strong><span>
+                          The defects that fall into this category are severe performance issues that cause the application to freeze or hang, runtime failures that cause the application to crash, serious functionality issues that prevent users
+                          from progressing with their work, exploitable security holes, data loss, data corruption, defects with associated clinical risk, et cetera.</span>
+                      </li>
+                      <li><strong>Blocker:</strong><span> This is reserved for defects that prevent the progress of internal testing or for showstoppers that are impeding a rollout.</span></li>
+                    </ul>
+                    <p></p>
+                    <p>Business values are defined by the following Risk Assessment Matrix. Each business value is determined by the combination of the defect’s severity and its likelihood of occurrence.</p>
+                    <img src="assets\img\04-workflows\03-logging-defects\08-risk-assessment-matrix.png" alt="Logging Defects: Risk Assessment Matrix" class="img-fluid img-container" />
+                    <p></p>
+                  </li>
+                  <li>
+                    <h5>Custom Fields</h5>
+                    <p>
+                      Custom fields are defined in the targetprocess admin configuration section, and these can be of several types such as drop-down list, free-text field, boolean control, computed field (calculated from the values of other fields
+                      by a defined formula) etc. The most notable custom fields are:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Resolution:</strong><span> Defines the reason for moving defects into certain states. Common uses of the Resolution field include:</span>
+                        <ul>
+                          <li>After a developer fixes a defect, they will mark it Resolved and set the Resolution to Fixed.</li>
+                          <li>When a developer believes the defect is invalid, they will mark it Resolved and set the Resolution to Invalid.</li>
+                          <li>After a defect fails retesting, a QA person will move it back to the Confirmed state and set the Resolution to Reopened.</li>
+                          <li>When a developer needs more information on a defect from a QA person, they will mark it Resolved and set the Resolution to Need More Info.</li>
+                        </ul>
+                        <span>Several other values are available for the Resolution field, however these are less commonly used.</span>
+                      </li>
+                      <li>
+                        <strong>Support Ticket ID:</strong><span>
+                          If a request for QA review includes a support ticket ID, then that ID needs to be copied over to the defect logged off the back of that request. More information about this is available in the section detailing the
+                          Requests For QA Review workflow.</span>
+                      </li>
+                      <li>
+                        <strong>State Of Fix:</strong><span>
+                          The value of this field never needs to be set manually; it is controlled by an integration with GitLab, and the value will automatically be set to “Fix is on Development” when the fix for the defect has been merged to the
+                          development branch and to “Fix is on Development and Production” when the fix for the defect has been deployed to the production environment.</span>
+                      </li>
+                    </ul>
+                    <p></p>
+                    <img src="assets\img\04-workflows\03-logging-defects\09-custom-fields.png" alt="Logging Defects: Custom Fields" class="img-fluid img-container" />
+                    <p></p>
+                  </li>
+                  <li>
+                    <h5>Relations</h5>
+                    <p>Relations in targetprocess are symmetrical links that connect two entities. They can be of one of five types: Relation, Dependency, Blocker, Link and Duplicate.</p>
+                    <p>A relation between two targetprocess entities is similar to a flow, so if a defect was logged off the back of a request, for instance, then the defect will be linked by an outbound relation from the request.</p>
+                    <p></p>
+                    <img src="assets\img\04-workflows\03-logging-defects\10-outbound-relations.png" alt="Logging Defects: Outbound Relations" class="img-fluid img-container" />
+                    <p></p>
+                    <p>Because relations are symmetrical, the above means that in the defect context the request is linked by an inbound relation to the defect.</p>
+                    <p></p>
+                    <img src="assets\img\04-workflows\03-logging-defects\11-inbound-relations.png" alt="Logging Defects: Inbound Relations" class="img-fluid img-container" />
+                    <p></p>
+                    <p>
+                      An easy way to determine the context of one or more relations is to think of the grey circle at the middle of the diagram as the current entity. In our examples above, in the request context the defect is an outbound entity
+                      while in the defect context the request is an inbound entity.
+                    </p>
+                    <p></p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4>Grammar/Punctuation/Syntax/Semantics</h4>
+                <ul>
+                  <li>
+                    <strong>Grammar:</strong><span>
+                      Please always try to use correct grammar when logging defects and/or creating comments. To facilitate this, the Grammarly add-on can be installed in your browser. More information about Grammarly is available in the Tools
+                      section of this document. Examples of commonly made grammatical errors include:</span>
+                    <ul>
+                      <li>The incorrect use of homophones such as Then/Than, Their/There/They’re, To/Too, Your/You’re, Of/Off.</li>
+                      <li>
+                        Using nouns instead of verbs. Examples: a) <s>the user is unable to login</s> the user is unable to log in; b) <s>the user is experiencing issues attempting to setup the configuration</s> the user is experiencing issues
+                        attempting to set up the configuration; c) <s>we will rollout a new version of the application</s> we will roll out a new version of the application;
+                      </li>
+                      <li>Incorrectly capitalized acronyms or initialisms. Examples: a) <s>Json</s> JSON; b) <s>Asap</s> ASAP;</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Punctuation:</strong><span> Correct punctuation matters, so always try to keep on top of that. Grammarly, most of the time, can help with this as well. Examples of commonly made punctuation mistakes include:</span>
+                    <ul>
+                      <li>Not ending sentences with a period, or an exclamation/question mark where appropriate.</li>
+                      <li>Using dashes for hyphens and vice versa. A hyphen (-) is a punctuation mark that’s used to join words or parts of words, whereas a dash (–) is longer than a hyphen and is commonly used to indicate a range or a pause</li>
+                      <li>Using apostrophes in plural words. Examples: a) <s>SMS's</s> SMSs; b) <s>ID's</s> IDs;</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Syntax:</strong><span>
+                      Syntax is essentially about what word comes before and after another word. Please make sure your sentences don't end up sounding like tongue twisters. English can be weird; it can be understood through tough thorough thought,
+                      though.</span>
+                  </li>
+                  <li><strong>Semantics:</strong><span> Semantics are concerned with the meaning of signifiers such as words, phrases, signs, and symbols. In terms of meaning, some very important guidelines on logging defects are:</span></li>
+                  <ul>
+                    <li>
+                      <span>Never log any defects that sound like requests for the developer. An incorrect defect title would be <em>“<s>Please change the color of this text.</s>”</em>, however the correct title could be
+                        <em>"Inconsistent text color being used."</em>.</span>
+                    </li>
+                    <li>
+                      <span>Never be subjective while describing a defect. An incorrect description would be <em>“<s>When I logged in, I was presented with an error message.</s>”</em>, however the correct description could be
+                        <em>“After logging in, it was observed that an error occurs.”</em>. Always try to avoid describing defects in the first person, and always try to be as objective as possible.</span>
+                    </li>
+                  </ul>
+                  <span>I will end this section with a programming joke: A woman asks her husband, a programmer, “Could you please go shopping for me, and buy one carton of milk? And if they have eggs, please get six.” A short time later, the
+                    programmer comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span>
+                </ul>
+              </li>
+              <p></p>
+              <li>
+                <h4>Comments</h4>
+                <p>While creating comments in targetprocess, it is possible to tag users or entities in the comment body.</p>
+                <p>
+                  Tagging users can be done by inserting an @ sign followed by starting to type the user’s name and then selecting them from an auto-complete list; doing so will cause the tagged user to receive a notification of the newly created
+                  comment.
+                </p>
+                <p>Tagging entities can be done by typing “ID: ” followed by the targetprocess ID of the entity.</p>
+                <img src="assets\img\04-workflows\03-logging-defects\12-comment-tags.png" alt="Logging Defects: Comment Tags" class="img-fluid img-container" />
+                <p></p>
+                <p>Tagged users and entities will resolve to interactive elements as soon as the comment has been saved. These can now be clicked to navigate to the tagged user and/or entity.</p>
+                <img src="assets\img\04-workflows\03-logging-defects\13-comment-links.png" alt="Logging Defects: Comment Links" class="img-fluid img-container" />
+                <p></p>
+                <p>
+                  While tagging allows users to send notifications to other users by including them in the comment, another way of sending notifications to other users that a new comment has been created is to use the checkboxes under the comment
+                  editor. By ticking these, email notifications can be sent to the card owner, the people assigned to the card, and/or the members of the project in which the card was created.
+                </p>
+                <img src="assets\img\04-workflows\03-logging-defects\14-comment-notifications.png" alt="Logging Defects: Comment Notifications" class="img-fluid img-container" />
+                <p></p>
+                <p>
+                  Lastly, in order to make the best use of the comments section, please make sure that you are using the comment sort order that is right for you. This is a matter of personal preference and only needs to be done once, as it is a
+                  per-user setting and not a per-card setting. I personally prefer oldest first, because it works better for me to be able to go through the comment history from the top to the bottom.
+                </p>
+                <img src="assets\img\04-workflows\03-logging-defects\15-comment-ordering.png" alt="Logging Defects: Comment Ordering" class="img-fluid img-container" />
+                <p></p>
+              </li>
+              <p></p>
+            </ul>
+          </li>
+          <li id="4.4">
+            <h3>Test Cycles</h3>
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        <h2>Information Library</h2>
+        <ul>
+          <li id="5.1">
+            <h3>Levels Of Testing</h3>
+            <p>Software Testing Levels are the different stages of the Software Development Life Cycle where testing is conducted. There are four levels of software testing: Unit >> Integration >> System >> Acceptance.</p>
+            <img src="assets\img\05-information-library\01-levels-of-testing\01-the-four-levels-of-testing.png" alt="Information Library: Levels Of Testing" class="img-fluid img-container" />
+            <p></p>
+            <p>Some tend to include Regression Testing as a separate level of software testing but that is a misconception. Regression Testing is, in fact, just a type of testing that can be performed at any of the four main levels.</p>
+            <h5><strong>Unit Testing</strong></h5>
+            <p>
+              Unit Tests are typically automated tests written and run by software developers to ensure that the units of an application (methods/classes/etc.) meet their design and behave as intended. Since a component comprises multiple (and
+              often many) units, error detection per unit is simple, cost-effective and time-efficient. Unit Testing ensures that both the functional and the non-functional behaviour of the component are designed as per the specification.
+            </p>
+            <p></p>
+            <span>Some of the key considerations for Unit Tests are:</span>
+            <ul>
+              <li><span>Each component is tested in isolation from the rest of the system.</span></li>
+              <li><span>Unit Testing is usually performed by developers before handing over the code to QA.</span></li>
+              <li><span>Unit Testing is usually done in the developer’s local environment, before the code is propagated to higher environments.</span></li>
+              <li><span>Defects found at the Unit Testing stage are fixed there and then, and there is no formal defect management process that is followed.</span></li>
+            </ul>
+            <p></p>
+            <h5><strong>Integration Testing</strong></h5>
+            <p>
+              Integration Testing is carried out once Unit Testing is complete. It focuses on the interaction between the components or systems being integrated. Integration Testing can be of two types, Component Integration Testing or System
+              Integration Testing.
+            </p>
+            <p></p>
+            <ul>
+              <li>
+                <strong>Component Integration Testing:</strong><span> Focuses on the interaction between the components of a system. For instance, in meddbase, the interaction between raising invoices and making payments can be classified as
+                  Component Integration Testing.</span>
+              </li>
+              <li>
+                <strong>System Integration Testing:</strong><span>
+                  Focuses on the interaction between the application under test and micro-services or other systems. Typically, all third-party integrations are covered by System Integration Testing. Examples of micro-services and of other
+                  systems that integrate with meddbase are Xero, SagePay and the PACS Service.</span>
+              </li>
+            </ul>
+            <p></p>
+            <img src="assets\img\05-information-library\01-levels-of-testing\02-integration-testing.png" alt="Information Library: Levels Of Testing: Integration Testing" class="img-fluid img-container" />
+            <p></p>
+            <p>Integration Testing can be performed in one of four ways:</p>
+            <ul>
+              <li>
+                <strong>Big Bang:</strong><span> An approach to Integration Testing where all or most of the units are combined together and tested at one go. This approach is taken when the testing team receives the entire software in a bundle.
+                  So what is the
+                  difference between Big Bang Integration Testing and System Testing? The former tests only the interactions between the components while the latter tests the entire system.</span>
+              </li>
+              <li>
+                <strong>Top-Down:</strong><span> An approach to Integration Testing where top-level units are tested first and lower-level units are tested step by step after that. This approach is taken when a top-down development approach is
+                  followed. Stubs are
+                  needed to simulate lower-level units which may not be available during the initial phases of testing.</span>
+              </li>
+              <li>
+                <strong>Bottom-Up:</strong><span> An approach to Integration Testing where bottom-level units are tested first and upper-level units step by step after that. This approach is taken when a bottom-up development approach is
+                  followed. Drivers are needed
+                  to simulate higher-level units which may not be available during the initial phases of testing.</span>
+              </li>
+              <li><strong>Hybrid/Sandwich:</strong><span> An approach to Integration Testing which is a combination of the Top-Down and Bottom-Up approaches.</span></li>
+            </ul>
+            <p></p>
+            <p>
+              Test Stubs and Test Drivers act as substitutes to incomplete or missing components. They do not implement the entire programming logic of the components but just simulate data communication with the calling components. Stubs are
+              called by the components under test, while Drivers call the components under test.
+            </p>
+            <img src="assets\img\05-information-library\01-levels-of-testing\03-lack-of-integration-testing.webp" alt="Information Library: Levels Of Testing: Integration Testing: Lack Of Integration Testing" class="img-fluid img-container" />
+            <p></p>
+            <p>Some of the key considerations for Integration Testing are:</p>
+            <ul>
+              <li>
+                <span>Integration Testing ensures that both the functional and the non-functional behaviour of the integrated system or component are as per design.</span>
+              </li>
+              <li>
+                <span>Interfaces, APIs, micro-services and third-party integrations are typically covered by Integration Testing.</span>
+              </li>
+              <li>
+                <span>Integration testing is carried out as soon as two interacting components are ready to test, without waiting for the entire system to be ready. This ensures early detection of defects and helps in tracking the defects down
+                  to a particular integration.</span>
+              </li>
+            </ul>
+            <p></p>
+            <h5><strong>System Testing</strong></h5>
+            <p>
+              Once Integration Testing is completed successfully, we move on to the next level of testing, which is called System Testing. IEEE defines System Testing as <em>"testing performed on a complete and integrated system, to check the
+                system's compliance with its specific requirements"</em>. System Testing can be classified as:
+            </p>
+            <ul>
+              <li><strong>Functional System Testing:</strong><span> This ensures that the system is performing all the functions that were defined in the software requirement specification.</span></li>
+              <li><strong>Non-Functional System Testing:</strong><span> This ensures that the non-functional aspects of the system are working to acceptable standards. Some of the types of non-functional requirements are:</span>
+                <ul>
+                  <li><strong>Performance:</strong><span> System performs to industry standards.</span></li>
+                  <li><strong>Load Handling:</strong><span> Acceptable performance of the system under increased load.</span></li>
+                  <li><strong>Recovery:</strong><span> How the system recovers from failures.</span></li>
+                  <li><strong>Reliability:</strong><span> Ability of the software to consistently perform its functions over time.</span></li>
+                  <li><strong>Usability:</strong><span> Ease with which a user can perform the desired functions.</span></li>
+                  <li><strong>Security:</strong><span> The system's robustness against malicious attacks.</span></li>
+                </ul>
+              </li>
+            </ul>
+            <p></p>
+            <h5><strong>Acceptance Testing</strong></h5>
+            <p>
+              Acceptance Testing is performed after System Testing has been successfully executed. Acceptance Testing is done to provide stakeholders the confidence that the system will work according to their expectations. While all the other levels
+              of testing (Unit/Component, Integration and System) are verification stages, Acceptance Testing is a validation stage. The amount of Acceptance Testing required is determined based on risk and on how much testing has been successfully
+              executed at previous levels.
+            </p>
+            <p>Acceptance Testing can be of various types, some of the key ones are:</p>
+            <ul>
+              <li><strong>Contract Acceptance Testing:</strong><span> The criteria for accepting a product may be predefined in a contract. Acceptance Testing is carried out to check whether the software complies with the contractual
+                  specifications.</span></li>
+              <li><strong>Regulation Acceptance Testing:</strong><span> The software must meet regulatory standards of different countries and industries before it is released to production.</span></li>
+              <li><strong>Operational Acceptance Testing:</strong><span> Ensures that the software is ready to be used and maintained in a live environment. Typical checks can include inspecting backup facilities, asserting the readiness for end-user
+                  training, analysis of disaster recovery plans, deployment/rollback simulations, etc.</span></li>
+              <li><strong>User Acceptance Testing:</strong><span> Is mainly carried out by the end-users. There could be different user groups who will be using the software, and we need to ensure that each group is represented in UAT.</span></li>
+              <li><strong>Alpha Testing:</strong><span> Is usually carried out by the internal staff of the software development company. It’s done when the software is at the verge of completion, and it’s done at the developer’s site. Typically, the
+                  developer and QA teams do not participate in Alpha Testing, due to a low level of code independence.</span></li>
+              <li><strong>Beta Testing:</strong><span> Is performed by a group of customers. It is done at the customer’s site and usually happens after Alpha Testing has been completed successfully.</span></li>
+            </ul>
+            <p></p>
+          </li>
+          <li id="5.2">
+            <h3>Cycle Time, TAKT Time, Lead Time</h3>
+          </li>
+          <li id="5.3">
+            <h3>Retesting VS Regression Testing</h3>
+          </li>
+          <li id="5.4">
+            <h3>Error, Defect, Failure, Bug</h3>
+          </li>
+          <li id="5.5">
+            <h3>Cases Styles</h3>
+            <ul>
+              <li>
+                <strong>Sentence Case:</strong><span> The quick brown fox jumps over the lazy dog</span>
+                <p>
+                  A mixed-case style in which the first word of the sentence is capitalised, as well as proper nouns and other words as required by a more specific rule. This is generally equivalent to the baseline universal standard of formal
+                  English orthography.
+                </p>
+              </li>
+              <li>
+                <strong>Title Case (Capital Case, Headline Style):</strong><span> The Quick Brown Fox Jumps over the Lazy Dog</span>
+                <p>
+                  A mixed-case style with all words capitalised, except for certain subsets (particularly articles and short prepositions and conjunctions) defined by rules that are not universally standardised. The standardisation is only at the
+                  level of house styles and individual style manuals. In text processing, title case usually involves the capitalisation of all words irrespective of their part of speech. This simplified variant of title case is also known as start
+                  case or initial caps.
+                </p>
+              </li>
+              <li>
+                <strong>All Caps (All Uppercase):</strong><span> THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</span>
+                <p>
+                  A unicase style with capital letters only. This can be used in headings and special situations, such as for typographical emphasis in text made on a typewriter. With the advent of the Internet, the all-caps style is more often
+                  used for emphasis; however, it is considered poor netiquette by some to type in all capitals, and said to be tantamount to shouting. Long spans of Latin-alphabet text in all upper-case are harder to read because of the absence of
+                  the ascenders and descenders found in lower-case letters, which can aid recognition. In some cultures it is common to write family names in all caps to distinguish them from the given names, especially in identity documents such
+                  as passports.
+                </p>
+              </li>
+              <li>
+                <strong>Small Caps:</strong><span class="small-caps"> The quick brown fox jumps over the lazy dog</span>
+                <p>
+                  Similar in form to capital letters but roughly the size of a lower-case "x", small caps can be used instead of lower-case letters and combined with regular caps in a mixed-case fashion. This is a feature of certain fonts such as
+                  Copperplate Gothic. According to various typographical traditions, the height of small caps can be equal to or slightly larger than the x-height of the typeface (the smaller variant is sometimes called petite caps and may also be
+                  mixed with the larger variant). Small caps can be used for acronyms, names, mathematical entities, computer commands in printed text, business or personal printed stationery letterheads, and other situations where a given phrase
+                  needs to be distinguished from the main text.
+                </p>
+              </li>
+              <li>
+                <strong>All Lowercase:</strong><span> the quick brown fox jumps over the lazy dog</span>
+                <p>
+                  A unicase style with no capital letters. This is sometimes used for artistic effect, such as in poetry. Also commonly seen in computer languages, and in informal electronic communications such as SMS language and instant messaging
+                  (avoiding the Shift key, to type more quickly).
+                </p>
+              </li>
+              <li>
+                <strong>Camel Case:</strong><span> theQuickBrownFoxJumpsOverTheLazyDog</span>
+                <p>
+                  Spaces and punctuation are removed and the first letter of each word is capitalised. When the first letter of the first word is lowercase ("iPod", "eBay", etc.), the case is usually known as Lower Camel Case (illustratively:
+                  camelCase).
+                </p>
+              </li>
+              <li>
+                <strong>Pascal Case:</strong><span> TheQuickBrownFoxJumpsOverTheLazyDog</span>
+                <p>
+                  Spaces and punctuation are removed and the first letter of each word is capitalised. If this includes the first letter of the first word ("MasterCard", "PowerPoint", etc.), the case is usually called Upper Camel Case, Pascal Case
+                  (illustratively: PascalCase), or Bumpy Case.
+                </p>
+              </li>
+              <li>
+                <strong>Snake Case:</strong><span> the_quick_brown_fox_jumps_over_the_lazy_dog</span>
+                <p>
+                  Punctuation is removed and spaces are replaced by single underscores. Normally the letters share the same case (e.g. "UPPER_CASE_EMBEDDED_UNDERSCORE" or "lower_case_embedded_underscore"), but the case can be mixed as well. The
+                  style may also be called Pothole Case, especially in Python programming, in which this convention is often used for naming variables. Illustratively, it may be rendered snake_case or pothole_case. When all-upper-case, it may be
+                  referred to as Screaming Snake Case (or SCREAMING_SNAKE_CASE).
+                </p>
+              </li>
+              <li>
+                <strong>Kebab Case:</strong><span> the-quick-brown-fox-jumps-over-the-lazy-dog</span>
+                <p>
+                  Similar to Snake Case, above, except hyphens rather than underscores are used to replace spaces (illustratively: kebab-case). It is also known as Spinal Case, Param Case, LISP Case, and Dash Case. If every word is capitalised, the
+                  style is known as Train Case (or TRAIN-CASE).
+                </p>
+              </li>
+              <li>
+                <strong>Studly Caps:</strong><span> tHeqUicKBrOWnFoXJUmpsoVeRThElAzydOG</span>
+                <p>
+                  Mixed case with no semantic or syntactic significance to the use of the capitals. Sometimes only vowels are upper case, at other times upper and lower case are alternated, but often it is simply random. The name comes from the
+                  sarcastic or ironic implication that it was used in an attempt by the writer to convey their own coolness. It is also used to mock the violation of standard English case conventions by marketers in the naming of computer software
+                  packages, even when there is no technical requirement to do so – e.g., Sun Microsystems' naming of a windowing system NeWS. Illustrative naming of the style is, naturally, random: stUdlY cAps, StUdLy CaPs, etc.
+                </p>
+              </li>
+            </ul>
+            <p></p>
+          </li>
+          <li id="5.6">
+            <h3>Continuous Integration/Delivery/Deployment</h3>
+            <ul>
+              <li>
+                <strong>Continuous Integration:</strong><span>
+                  Developers practicing continuous integration merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so,
+                  you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.</span>
+                <p></p>
+                <p>Continuous integration puts a great emphasis on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.</p>
+              </li>
+              <li>
+                <strong>Continuous Delivery:</strong><span>
+                  Continuous delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have
+                  automated your release process and you can deploy your application at any point of time by clicking on a button.</span>
+                <p></p>
+                <p>
+                  In theory, with continuous delivery, you can decide to release daily, weekly, fortnightly, or whatever suits your business requirements. However, if you truly want to get the benefits of continuous delivery, you should deploy to
+                  production as early as possible to make sure that you release small batches that are easy to troubleshoot in case of a problem.
+                </p>
+              </li>
+              <li>
+                <strong>Continuous Deployment:</strong><span>
+                  Continuous deployment goes one step further than continuous delivery. With this practice, every change that passes all stages of your production pipeline is released to your customers. There's no human intervention, and only a
+                  failed test will prevent a new change to be deployed to production.</span>
+                <p></p>
+                <p>
+                  Continuous deployment is an excellent way to accelerate the feedback loop with your customers and take pressure off the team as there isn't a Release Day anymore. Developers can focus on building software, and they see their work
+                  go live minutes after they've finished working on it.
+                </p>
+              </li>
+              <img src="assets\img\05-information-library\07-continuous-integration-delivery-deployment\01-continuous-integration-delivery-deployment.png" alt="Information Library: Continuous Integration/Delivery/Deployment"
+                class="img-fluid img-container" />
+              <p></p>
+              <p>To put it simply continuous integration is part of both continuous delivery and continuous deployment. And continuous deployment is like continuous delivery, except that releases happen automatically.</p>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <br />
 
-        <!-- Start Of Change Log -->
-        <li>
-          <h2>Change Log</h2>
-          <p></p>
-          <div class="accordion" id="changelog">
-            <div id="6.4" class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-three">
-                    <h3>v1.3</h3>
-                  </label>
-                </h5>
-              </div>
-              <div id="one-point-three" class="collapse" data-parent="#changelog">
-                <div class="card-body">
-                  <ul>
-                    <li>Add Bookmarks</li>
-                    <li>Make System Requirements Collapsible</li>
-                    <li>Add Application Structure</li>
-                    <li>Add Custom Windows Hotkeys To Productivity</li>
-                  </ul>
-                </div>
-              </div>
+      <!-- Start Of Change Log -->
+      <li>
+        <h2>Change Log</h2>
+        <p></p>
+        <div class="accordion" id="changelog">
+          <div id="6.4" class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-three">
+                  <h3>v1.3</h3>
+                </label>
+              </h5>
             </div>
-            <div id="6.3" class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-two">
-                    <h3>v1.2</h3>
-                  </label>
-                </h5>
-              </div>
-              <div id="one-point-two" class="collapse" data-parent="#changelog">
-                <div class="card-body">
-                  <ul>
-                    <li>Add Continuous Integration/Delivery/Deployment To Information Library</li>
-                    <li>Add Case Styles To Information Library</li>
-                    <li>Add Levels Of Testing To Information Library</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div id="6.2" class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-one">
-                    <h3>v1.1</h3>
-                  </label>
-                </h5>
-              </div>
-              <div id="one-point-one" class="collapse" data-parent="#changelog">
-                <div class="card-body">
-                  <ul>
-                    <li>Add Generating Test Data Workflow</li>
-                    <li>Add System Requirements</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div id="6.1" class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-zero">
-                    <h3>v1.0</h3>
-                  </label>
-                </h5>
-              </div>
-              <div id="one-point-zero" class="collapse" data-parent="#changelog">
-                <div class="card-body">
-                  <ul>
-                    <li>Bootstrap HTML Document</li>
-                    <li>Add Footer & Navigation Bar</li>
-                    <li>Create Chapters & Chapter Structure</li>
-                    <li>Add Defect Logging Workflow</li>
-                    <li>Add Smooth Scrolling Between Chapters</li>
-                    <li>Create Change Log Accordion</li>
-                    <li>Decouple BASE64 Images From HTML File</li>
-                    <li>Switch From CDN References To Offline Dependencies</li>
-                    <li>Add Source Mapping Files For Dependencies</li>
-                  </ul>
-                </div>
+            <div id="one-point-three" class="collapse" data-parent="#changelog">
+              <div class="card-body">
+                <ul>
+                  <li>Add Bookmarks</li>
+                  <li>Make System Requirements Collapsible</li>
+                  <li>Add Application Structure</li>
+                  <li>Add Custom Windows Hotkeys To Productivity</li>
+                </ul>
               </div>
             </div>
           </div>
-        </li>
-        <!-- End Of Change Log -->
-        
-      </ul>
-    </div>
-    <div class="jumbotron" id="filler"></div>
-
-    <!-- Footer -->
-    <nav class="navbar fixed-bottom navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://www.meddbase.com/">
-          <img id="footer-logo" src="assets\img\00-company-assets\01-meddbase-logo.png" alt="meddbase" />
-        </a>
-        <div>
-          <p id="footer-text">Copyright © 2019 Medical Management Systems</p>
+          <div id="6.3" class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-two">
+                  <h3>v1.2</h3>
+                </label>
+              </h5>
+            </div>
+            <div id="one-point-two" class="collapse" data-parent="#changelog">
+              <div class="card-body">
+                <ul>
+                  <li>Add Continuous Integration/Delivery/Deployment To Information Library</li>
+                  <li>Add Case Styles To Information Library</li>
+                  <li>Add Levels Of Testing To Information Library</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="6.2" class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-one">
+                  <h3>v1.1</h3>
+                </label>
+              </h5>
+            </div>
+            <div id="one-point-one" class="collapse" data-parent="#changelog">
+              <div class="card-body">
+                <ul>
+                  <li>Add Generating Test Data Workflow</li>
+                  <li>Add System Requirements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="6.1" class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-zero">
+                  <h3>v1.0</h3>
+                </label>
+              </h5>
+            </div>
+            <div id="one-point-zero" class="collapse" data-parent="#changelog">
+              <div class="card-body">
+                <ul>
+                  <li>Bootstrap HTML Document</li>
+                  <li>Add Footer & Navigation Bar</li>
+                  <li>Create Chapters & Chapter Structure</li>
+                  <li>Add Defect Logging Workflow</li>
+                  <li>Add Smooth Scrolling Between Chapters</li>
+                  <li>Create Change Log Accordion</li>
+                  <li>Decouple BASE64 Images From HTML File</li>
+                  <li>Switch From CDN References To Offline Dependencies</li>
+                  <li>Add Source Mapping Files For Dependencies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </li>
+      <!-- End Of Change Log -->
 
-    <!-- Scripts -->
-    <script src="assets\js\jquery-3.3.1.js"></script>
-    <script src="assets\js\popper-umd-1.14.7.js"></script>
-    <script src="assets\js\bootstrap-4.3.1.js"></script>
-    <script src="assets\js\fontawesome-all-5.9.0.js"></script>
-  </body>
+    </ul>
+  </div>
+  <div class="jumbotron" id="filler"></div>
+
+  <!-- Footer -->
+  <nav class="navbar fixed-bottom navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.meddbase.com/">
+        <img id="footer-logo" src="assets\img\00-company-assets\01-meddbase-logo.png" alt="meddbase" />
+      </a>
+      <div>
+        <p id="footer-text">Copyright © 2019 Medical Management Systems</p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="assets\js\jquery-3.3.1.js"></script>
+  <script src="assets\js\popper-umd-1.14.7.js"></script>
+  <script src="assets\js\bootstrap-4.3.1.js"></script>
+  <script src="assets\js\fontawesome-all-5.9.0.js"></script>
+</body>
+
 </html>
