@@ -74,6 +74,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Change Log</a>
             <div class="dropdown-menu">
+              <a class="dropdown-item" href="#6.5">v1.4</a>
               <a class="dropdown-item" href="#6.4">v1.3</a>
               <a class="dropdown-item" href="#6.3">v1.2</a>
               <a class="dropdown-item" href="#6.2">v1.1</a>
@@ -156,15 +157,82 @@
           </li>
           <li id="1.2">
             <button class="btn btn-outline-dark mt-2 mb-2" id="application-structure-button" type="button" data-toggle="collapse" data-target="#application-structure">
-              <h3>Structure</h3>
+              <h3>Infrastructure</h3>
             </button>
             <div class="collapse" id="application-structure">
               <img src="assets\img\01-application\02-structure\01-application-structure.png" alt="Application: Structure" class="img-fluid img-container" />
             </div>
-            <p></p>
           </li>
           <li id="1.3">
-            <h3>Cross-System User Accounts</h3>
+            <button class="btn btn-outline-dark mt-2 mb-2" id="support-users-button" type="button" data-toggle="collapse" data-target="#support-users">
+              <h3>Cross-System User Accounts</h3>
+            </button>
+            <div class="collapse" id="support-users">
+              <p>Support Users are special meddbase profiles with elevated privileges, that can be used to access functions of the system which are reserved for MMS staff. They can be thought of as a collection of user profiles with one
+                master Support User profile in a root chamber and multiple Support User instances across the environment, one per chamber, that reference the aforementioned master profile for credentials.
+              </p>
+              <p>Each environment has a single root chamber, and this is company ID #1 that is created programmatically as part of the environment creation process. Master Support User profiles live in this chamber, while instances of them live in
+                the other chambers on the environment. The latter do not have passwords of their own and instead compare the password used while logging into a non-root chamber with the password stored on the master Support User profile in the root
+                chamber.
+              </p>
+              <img src="assets\img\01-application\03-support-users\01-support-user-instances.gif" alt="Application: Support Users" class="img-fluid img-container quarter-size" />
+              <p></p>
+              <span><strong>What can Support Users do:</strong></span>
+              <ul>
+                <li><span>troubleshoot the system with minimal impact on client chambers; Support Users are hidden to regular users, however actions that Support Users take are still logged in the activity log and can be reported on by chamber
+                    administrators</span></li>
+                <li><span>use the system without the need for a license</span></li>
+                <li><span>access hidden functions of meddbase that are reserved for MMS staff, such as the <a href="cp=TestBed">TestBed</a>, the <a href="cp=Diagnostics/Chambers">Chamber Load/Unload</a> page or the <a
+                      href="cp=Account/Configuration/AdminConfiguration">Licensing Chamber</a> page</span></li>
+                <li><span>allow MMS staff to log into correctly configured chambers across an environment with the same password and base username; Support Users are per environment so while a member of staff may have more than one Support User, one
+                    per environment (development/production), the base username will generally be the same</span></li>
+              </ul>
+              <p></p>
+              <span><strong>What can Support Users not do:</strong></span>
+              <ul>
+                <li><span>log into chambers that have not been correctly configured (e.g. missing chamber domain key)</span></li>
+                <li><span>log into chambers that cannot be accessed from the unified login page (login.meddbase.com on production or testlogin.meddbase.com on development); examples of such chambers would be ones on UAT or client import
+                    systems</span></li>
+                <li><span>create prescriptions or record medication</span></li>
+                <li><span>be the primary attendee of an appointment</span></li>
+                <li><span>run reports via query string; this is due to the username and password being required parameters in the query string, however Support Users do not have passwords in non-root chambers</span></li>
+              </ul>
+              <p></p>
+              <p>Support Users cannot create prescriptions, record medication or be the primary attendee of an appointment because they are created linked to a deleted non-medical person account and non-medical person accounts do not have the
+                permissions to perform these actions; this is hard-coded in the application’s codebase and cannot be configured via security permissions. If the need arises, to work around this limitation, the instance of the Support User could be
+                linked to a new medical person account, however permission from the client would be needed before creating a medical person account for the member of staff in a client’s chamber.
+              </p>
+              <h5><strong>Creating Support Users</strong></h5>
+              <p>This can only be done in the root chamber. A Support User Administrator will create a medical person account for the member of staff requiring a Support User and then set up a new user profile linked to that medical person account.
+                Once this is done, the user is promoted to a Support User.
+              </p>
+              <img src="assets\img\01-application\03-support-users\02-promote-user-to-support-user.png" alt="Application: Promote User To Support User" class="img-fluid img-container" />
+              <p></p>
+              <p>The newly created master Support User profile is then added to one of two user role groups, MMS Non-Admin Support Users or MMS Support Administrators, based on permissions. For security considerations, it is imperative that these two
+                user role groups are correctly used to manage Support Users, otherwise a security hole is introduced by having users with incorrectly elevated permissions in the root chamber.
+              </p>
+              <img src="assets\img\01-application\03-support-users\03-support-user-role-groups.png" alt="Application: Support User Role Groups" class="img-fluid img-container" />
+              <p></p>
+              <p>MMS Support Administrators have permissions to create medical person accounts and user profiles, and to promote regular users to Support Users. Non-Admin Support Users only have the permission to access the root chamber Start Page so
+                they can reset their password and set up Two-Factor Authentication; the root chamber is the only chamber where this is possible for Support Users.
+              </p>
+              <p>Once a member of staff no longer requires chamber access, their Support User is demoted back to a regular user and the password of their master Support User profile is scrambled.</p>
+              <img src="assets\img\01-application\03-support-users\04-deactivate-support-user.png" alt="Application: Deactivate Support User" class="img-fluid img-container" />
+              <p></p>
+              <p>Setting up Support Users is normally the responsibility of department managers, and requests for Support User creation should be made accordingly.</p>
+              <h5><strong>Logging In As A Support User</strong></h5>
+              <p>As soon as a member of staff has their Support User up and running, the first thing they need to do is log into the root chamber with the username and password sent to them in a registration email, and once logged in they need to
+                change their password and set up Two-Factor Authentication. After securing their Support User, members of staff can then start logging into chambers on the same environment as that root chamber.
+              </p>
+              <p>The format of the username while logging in as a Support User is <strong>MMS.User@KEY</strong>, where <strong>KEY</strong> is the chamber domain key of the client's chamber (e.g. <strong>MMS.Vlad@HCA</strong> or
+                <strong>MMS.Preaw@BUPA.OH</strong>). It is also possible to log into chambers on special systems such as <strong>RC</strong> or <strong>BACKEND</strong> by appending a system modifier to the username, e.g.
+                <strong>MMS.Vlad@LAB-RC</strong> or <strong>MMS.Vlad@LAB-BACKEND</strong>. If not on an internal network, a 2FA key will also be required to log in.
+              </p>
+              <p>Upon logging in for the first time in a chamber with your Support User, you may be presented with a security permissions error; this is because security permissions rebuild slower than the Support User instance gets created in that
+                chamber. Additionally, a deleted non-medical person account gets created and linked to the new chamber user, and, lastly, the Support User is added to the System Administrators role group. Some clients decide to deny the System
+                Administrators role group permissions in their chamber; when this is the case, they cannot receive support until permissions are granted again.
+              </p>
+            </div>
           </li>
         </ul>
       </li>
@@ -829,6 +897,22 @@
         <h2>Change Log</h2>
         <p></p>
         <div class="accordion" id="changelog">
+          <div id="6.5" class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <label class="btn collapsed" type="button" data-toggle="collapse" data-target="#one-point-four">
+                  <h3>v1.4</h3>
+                </label>
+              </h5>
+            </div>
+            <div id="one-point-four" class="collapse" data-parent="#changelog">
+              <div class="card-body">
+                <ul>
+                  <li>Add Support User Guide</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div id="6.4" class="card">
             <div class="card-header">
               <h5 class="mb-0">

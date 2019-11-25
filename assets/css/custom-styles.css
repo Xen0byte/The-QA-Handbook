@@ -102,3 +102,13 @@ code {
   color: green;
   font-weight: bold;
 }
+
+.half-size {
+  height: 50%;
+  width: 50%;
+}
+
+.quarter-size {
+  height: 25%;
+  width: 25%;
+}
