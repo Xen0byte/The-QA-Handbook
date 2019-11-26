@@ -118,7 +118,7 @@
 												</li>
 											</ul>
 										</ul>
-										<li>Browser (Core Application)</li>
+										<li>Browser &lpar;Core Application&rpar;</li>
 										<ul>
 											<li>Current Major Version &amp; Previous Major Version</li>
 											<ul>
@@ -129,11 +129,11 @@
 													<a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a>
 												</li>
 												<li>
-													<a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a>
+													<a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge &lpar;Chromium&rpar;</a>
 												</li>
 											</ul>
 										</ul>
-										<li>Browser (Patient\OH Portal)</li>
+										<li>Browser &lpar;Patient\OH Portal&rpar;</li>
 										<ul>
 											<li>Current Major Version &amp; Previous Major Version</li>
 											<ul>
@@ -144,7 +144,7 @@
 													<a href="https://en.wikipedia.org/wiki/Google_Chrome_version_history">Google Chrome</a>
 												</li>
 												<li>
-													<a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge (Chromium)</a>
+													<a href="https://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge &lpar;Chromium&rpar;</a>
 												</li>
 											</ul>
 											<li>Current Major Version Only</li>
@@ -201,7 +201,7 @@
 										<span>access hidden functions of meddbase that are reserved for MMS staff, such as the <a href="cp=TestBed">TestBed</a>, the <a href="cp=Diagnostics/Chambers">Chamber Load/Unload</a> page or the <a href="cp=Account/Configuration/AdminConfiguration">Licensing Chamber</a> page</span>
 									</li>
 									<li>
-										<span>allow MMS staff to log into correctly configured chambers across an environment with the same password and base username; Support Users are per environment so while a member of staff may have more than one Support User, one per environment (development/production), the base username will generally be the same</span>
+										<span>allow MMS staff to log into correctly configured chambers across an environment with the same password and base username; Support Users are per environment so while a member of staff may have more than one Support User, one per environment &lpar;development/production&rpar;, the base username will generally be the same</span>
 									</li>
 								</ul>
 								<p></p>
@@ -210,10 +210,10 @@
 								</span>
 								<ul>
 									<li>
-										<span>log into chambers that have not been correctly configured (e.g. missing chamber domain key)</span>
+										<span>log into chambers that have not been correctly configured &lpar;e.g. missing chamber domain key&rpar;</span>
 									</li>
 									<li>
-										<span>log into chambers that cannot be accessed from the unified login page (login.meddbase.com on production or testlogin.meddbase.com on development); examples of such chambers would be ones on UAT or client import systems</span>
+										<span>log into chambers that cannot be accessed from the unified login page &lpar;login.meddbase.com on production or testlogin.meddbase.com on development&rpar;; examples of such chambers would be ones on UAT or client import systems</span>
 									</li>
 									<li>
 										<span>create prescriptions or record medication</span>
@@ -245,7 +245,7 @@
 									<strong>Logging In As A Support User</strong>
 								</h5>
 								<p>As soon as a member of staff has their Support User up and running, the first thing they need to do is log into the root chamber with the username and password sent to them in a registration email, and once logged in they need to change their password and set up Two-Factor Authentication. After securing their Support User, members of staff can then start logging into chambers on the same environment as that root chamber.</p>
-								<p>The format of the username while logging in as a Support User is <strong>MMS.User@KEY</strong>, where <strong>KEY</strong> is the chamber domain key of the client's chamber (e.g. <strong>MMS.Vlad@HCA</strong> or<strong>MMS.Preaw@BUPA.OH</strong>). It is also possible to log into chambers on special systems such as <strong>RC</strong> or <strong>BACKEND</strong> by appending a system modifier to the username, e.g.<strong>MMS.Vlad@LAB-RC</strong> or <strong>MMS.Vlad@LAB-BACKEND</strong>. If not on an internal network, a 2FA key will also be required to log in.</p>
+								<p>The format of the username while logging in as a Support User is <strong>MMS.User@KEY</strong>, where <strong>KEY</strong> is the chamber domain key of the client's chamber &lpar;e.g. <strong>MMS.Vlad@HCA</strong> or<strong>MMS.Preaw@BUPA.OH</strong>&rpar;. It is also possible to log into chambers on special systems such as <strong>RC</strong> or <strong>BACKEND</strong> by appending a system modifier to the username, e.g.<strong>MMS.Vlad@LAB-RC</strong> or <strong>MMS.Vlad@LAB-BACKEND</strong>. If not on an internal network, a 2FA key will also be required to log in.</p>
 								<p>Upon logging in for the first time in a chamber with your Support User, you may be presented with a security permissions error; this is because security permissions rebuild slower than the Support User instance gets created in that chamber. Additionally, a deleted non-medical person account gets created and linked to the new chamber user, and, lastly, the Support User is added to the System Administrators role group. Some clients decide to deny the System Administrators role group permissions in their chamber; when this is the case, they cannot receive support until permissions are granted again.</p>
 							</div>
 						</li>
@@ -260,7 +260,7 @@
 							<p>A comprehensive collection of bookmarks linking to a myriad of useful sites and resources can be downloaded by clicking the button below. The bookmarks are in both HTML and JSON format, so they should be compatible with most browsers.</p>
 							<form method="get" action="assets\download\bookmarks-2019-06-26.zip">
 								<button type="submit" class="btn btn-outline-dark download-button">
-									<i class="fas fa-download"/>
+									<i class="fas fa-download"></i>
 									<span>&nbsp;&nbsp;</span>Download Bookmarks</button>
 							</form>
 							<p></p>
@@ -279,9 +279,9 @@
 									<p>One thing to note is that Windows has some built-in hotkeys that do various things so, in order to not overlap with those, it is recommended that the custom hotkeys use the format CTRL + SHIFT + ALT + KEY.</p>
 									<img src="assets\img\02-productivity\03-windows\01-hotkeys.png" alt="Productivity: Windows: Hotkeys" class="img-fluid img-container" />
 									<p></p>
-									<p>The problem with hotkeys, however, is that, due to the way Windows operates, these binds are not automatically loaded on boot, which means they will only work after setting them up and until starting a new Windows session (e.g. rebooting the computer). Luckily, there is a workaround for this.</p>
+									<p>The problem with hotkeys, however, is that, due to the way Windows operates, these binds are not automatically loaded on boot, which means they will only work after setting them up and until starting a new Windows session &lpar;e.g. rebooting the computer&rpar;. Luckily, there is a workaround for this.</p>
 									<p>Windows doesn’t run a system-wide search for shortcut files while restoring hotkey assignments; it does however search in specific pre-defined directories, and one of these directories is the Start Menu folder. This means that any shortcuts in a sub-directory of the current user’s Start Menu folder will have their hotkeys loaded at login.</p>
-									<p>The hotkeys folder can be created either manually or by running the following PowerShell commands in an elevated (admin) shell:</p>
+									<p>The hotkeys folder can be created either manually or by running the following PowerShell commands in an elevated &lpar;admin&rpar; shell:</p>
 									<div class="shell-commands-parent">
 										<div class="shell-commands-child">
 											<code>$Path="$Env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu"</code>
@@ -384,14 +384,14 @@
 									<p>The structure of a defect card in targetprocess should be in accordance with the following guidelines:</p>
 									<p>The body of the defect starts with a detailed description. Please be sure to include all the relevant information, while avoiding extra unneeded information that may confuse the reader.</p>
 									<p>The description is separated from the steps to reproduce by a horizontal line. This can either be inserted via the user interface of the editor, or by adding a &lt;hr&gt; tag while inspecting the source of the defect body.</p>
-									<p>The second section contains details on where the issue reproduces and what the steps to reproduce are. Credentials and environment variables are typed in on a single line in the format “system > user > password (optional) >browser (optional)”. The browser is only required if the issue is browser specific. Examples include “system.meddbase.com > MMS.User@HCA > Mozilla Firefox” or “qa.meddbase.com > BRL.Vlad > myPassword”. Following this line are the steps to reproduce, which must be typed on sequentially numbered rows. Please don’t skip any logical step, while also making sure that the STR are short and concise, as not to confuse the reader. Ideally, the steps to reproduce should be a list element; HTML lists can be inserted into the defect description via the text editor user interface.</p>
+									<p>The second section contains details on where the issue reproduces and what the steps to reproduce are. Credentials and environment variables are typed in on a single line in the format “system > user > password &lpar;optional&rpar; >browser &lpar;optional&rpar;”. The browser is only required if the issue is browser specific. Examples include “system.meddbase.com > MMS.User@HCA > Mozilla Firefox” or “qa.meddbase.com > BRL.Vlad > myPassword”. Following this line are the steps to reproduce, which must be typed on sequentially numbered rows. Please don’t skip any logical step, while also making sure that the STR are short and concise, as not to confuse the reader. Ideally, the steps to reproduce should be a list element; HTML lists can be inserted into the defect description via the text editor user interface.</p>
 									<p>If additional information is available, such as a stack trace, then it is separated from the previous sections by another horizontal line per block of additional information. Most often, stack traces will preserve the formatting of the HTML element that they were copied from; to avoid copying this formatting to the defect body, please first remove it. One of the easiest ways of accomplishing this while also preserving newline characters is to paste into a text document, select all, copy again, and finally paste into targetprocess.</p>
 									<img src="assets\img\04-workflows\03-logging-defects\01-structure.png" alt="Logging Defects: Structure" class="img-fluid img-container" />
 								</li>
 								<p></p>
 								<li>
 									<h4>Attachments</h4>
-									<p>It is preferable that attachments are captured via Greenshot (for image) and OBS Studio (for video); this is explained in more detail in the Tools section of this handbook. Video attachments can only be uploaded as files, while image attachments can be either uploaded as files or pasted in comments as inline images. The golden rule is: If an inline image takes up too much screen space, then upload it as a file instead. Too much space would be an image that would cause the comment box to expand in height more than twice the default size.</p>
+									<p>It is preferable that attachments are captured via Greenshot &lpar;for image&rpar; and OBS Studio &lpar;for video&rpar;; this is explained in more detail in the Tools section of this handbook. Video attachments can only be uploaded as files, while image attachments can be either uploaded as files or pasted in comments as inline images. The golden rule is: If an inline image takes up too much screen space, then upload it as a file instead. Too much space would be an image that would cause the comment box to expand in height more than twice the default size.</p>
 									<img src="assets\img\04-workflows\03-logging-defects\02-attachments.png" alt="Logging Defects: Attachments" class="img-fluid img-container" />
 									<p></p>
 									<p>When uploading attachments, please make sure that the file name is a timestamp in the format "YYYY-MM-DD_HH-MM-SS". This can be configured in the software product used to capture the attachment.</p>
@@ -464,7 +464,7 @@
 											<ul>
 												<li>
 													<strong>Enhancement:</strong>
-													<span>This severity is reserved for nice-to-have features. Defects that usually fall into this category are quality-of-life changes that enhance the user's experience. Occasionally, missing features that would improve on an MVP (Minimum Viable Product) may fall into this category as well.</span>
+													<span>This severity is reserved for nice-to-have features. Defects that usually fall into this category are quality-of-life changes that enhance the user's experience. Occasionally, missing features that would improve on an MVP &lpar;Minimum Viable Product&rpar; may fall into this category as well.</span>
 												</li>
 												<li>
 													<strong>Trivial:</strong>
@@ -498,7 +498,7 @@
 										</li>
 										<li>
 											<h5>Custom Fields</h5>
-											<p>Custom fields are defined in the targetprocess admin configuration section, and these can be of several types such as drop-down list, free-text field, boolean control, computed field (calculated from the values of other fields by a defined formula) etc. The most notable custom fields are:</p>
+											<p>Custom fields are defined in the targetprocess admin configuration section, and these can be of several types such as drop-down list, free-text field, boolean control, computed field &lpar;calculated from the values of other fields by a defined formula&rpar; etc. The most notable custom fields are:</p>
 											<ul>
 												<li>
 													<strong>Resolution:</strong>
@@ -619,7 +619,7 @@
 							<h5>
 								<strong>Unit Testing</strong>
 							</h5>
-							<p>Unit Tests are typically automated tests written and run by software developers to ensure that the units of an application (methods/classes/etc.) meet their design and behave as intended. Since a component comprises multiple (and often many) units, error detection per unit is simple, cost-effective and time-efficient. Unit Testing ensures that both the functional and the non-functional behaviour of the component are designed as per the specification.</p>
+							<p>Unit Tests are typically automated tests written and run by software developers to ensure that the units of an application &lpar;methods/classes/etc.&rpar; meet their design and behave as intended. Since a component comprises multiple &lpar;and often many&rpar; units, error detection per unit is simple, cost-effective and time-efficient. Unit Testing ensures that both the functional and the non-functional behaviour of the component are designed as per the specification.</p>
 							<p></p>
 							<span>Some of the key considerations for Unit Tests are:</span>
 							<ul>
@@ -735,7 +735,7 @@
 							<h5>
 								<strong>Acceptance Testing</strong>
 							</h5>
-							<p>Acceptance Testing is performed after System Testing has been successfully executed. Acceptance Testing is done to provide stakeholders the confidence that the system will work according to their expectations. While all the other levels of testing (Unit/Component, Integration and System) are verification stages, Acceptance Testing is a validation stage. The amount of Acceptance Testing required is determined based on risk and on how much testing has been successfully executed at previous levels.</p>
+							<p>Acceptance Testing is performed after System Testing has been successfully executed. Acceptance Testing is done to provide stakeholders the confidence that the system will work according to their expectations. While all the other levels of testing &lpar;Unit/Component, Integration and System&rpar; are verification stages, Acceptance Testing is a validation stage. The amount of Acceptance Testing required is determined based on risk and on how much testing has been successfully executed at previous levels.</p>
 							<p>Acceptance Testing can be of various types, some of the key ones are:</p>
 							<ul>
 								<li>
@@ -785,7 +785,7 @@
 								<li>
 									<strong>Title Case &lpar;Capital Case, Headline Style&rpar;:</strong>
 									<span> The Quick Brown Fox Jumps over the Lazy Dog</span>
-									<p>A mixed-case style with all words capitalised, except for certain subsets (particularly articles and short prepositions and conjunctions) defined by rules that are not universally standardised. The standardisation is only at the level of house styles and individual style manuals. In text processing, title case usually involves the capitalisation of all words irrespective of their part of speech. This simplified variant of title case is also known as start case or initial caps.</p>
+									<p>A mixed-case style with all words capitalised, except for certain subsets &lpar;particularly articles and short prepositions and conjunctions&rpar; defined by rules that are not universally standardised. The standardisation is only at the level of house styles and individual style manuals. In text processing, title case usually involves the capitalisation of all words irrespective of their part of speech. This simplified variant of title case is also known as start case or initial caps.</p>
 								</li>
 								<li>
 									<strong>All Caps &lpar;All Uppercase&rpar;:</strong>
@@ -795,32 +795,32 @@
 								<li>
 									<strong>Small Caps:</strong>
 									<span class="small-caps"> The quick brown fox jumps over the lazy dog</span>
-									<p>Similar in form to capital letters but roughly the size of a lower-case "x", small caps can be used instead of lower-case letters and combined with regular caps in a mixed-case fashion. This is a feature of certain fonts such as Copperplate Gothic. According to various typographical traditions, the height of small caps can be equal to or slightly larger than the x-height of the typeface (the smaller variant is sometimes called petite caps and may also be mixed with the larger variant). Small caps can be used for acronyms, names, mathematical entities, computer commands in printed text, business or personal printed stationery letterheads, and other situations where a given phrase needs to be distinguished from the main text.</p>
+									<p>Similar in form to capital letters but roughly the size of a lower-case "x", small caps can be used instead of lower-case letters and combined with regular caps in a mixed-case fashion. This is a feature of certain fonts such as Copperplate Gothic. According to various typographical traditions, the height of small caps can be equal to or slightly larger than the x-height of the typeface &lpar;the smaller variant is sometimes called petite caps and may also be mixed with the larger variant&rpar;. Small caps can be used for acronyms, names, mathematical entities, computer commands in printed text, business or personal printed stationery letterheads, and other situations where a given phrase needs to be distinguished from the main text.</p>
 								</li>
 								<li>
 									<strong>All Lowercase:</strong>
 									<span> the quick brown fox jumps over the lazy dog</span>
-									<p>A unicase style with no capital letters. This is sometimes used for artistic effect, such as in poetry. Also commonly seen in computer languages, and in informal electronic communications such as SMS language and instant messaging (avoiding the Shift key, to type more quickly).</p>
+									<p>A unicase style with no capital letters. This is sometimes used for artistic effect, such as in poetry. Also commonly seen in computer languages, and in informal electronic communications such as SMS language and instant messaging &lpar;avoiding the Shift key, to type more quickly&rpar;.</p>
 								</li>
 								<li>
 									<strong>Camel Case:</strong>
 									<span> theQuickBrownFoxJumpsOverTheLazyDog</span>
-									<p>Spaces and punctuation are removed and the first letter of each word is capitalised. When the first letter of the first word is lowercase ("iPod", "eBay", etc.), the case is usually known as Lower Camel Case (illustratively: camelCase).</p>
+									<p>Spaces and punctuation are removed and the first letter of each word is capitalised. When the first letter of the first word is lowercase &lpar;"iPod", "eBay", etc.&rpar;, the case is usually known as Lower Camel Case &lpar;illustratively: camelCase&rpar;.</p>
 								</li>
 								<li>
 									<strong>Pascal Case:</strong>
 									<span> TheQuickBrownFoxJumpsOverTheLazyDog</span>
-									<p>Spaces and punctuation are removed and the first letter of each word is capitalised. If this includes the first letter of the first word ("MasterCard", "PowerPoint", etc.), the case is usually called Upper Camel Case, Pascal Case (illustratively: PascalCase), or Bumpy Case.</p>
+									<p>Spaces and punctuation are removed and the first letter of each word is capitalised. If this includes the first letter of the first word &lpar;"MasterCard", "PowerPoint", etc.&rpar;, the case is usually called Upper Camel Case, Pascal Case &lpar;illustratively: PascalCase&rpar;, or Bumpy Case.</p>
 								</li>
 								<li>
 									<strong>Snake Case:</strong>
 									<span> the_quick_brown_fox_jumps_over_the_lazy_dog</span>
-									<p>Punctuation is removed and spaces are replaced by single underscores. Normally the letters share the same case (e.g. "UPPER_CASE_EMBEDDED_UNDERSCORE" or "lower_case_embedded_underscore"), but the case can be mixed as well. The style may also be called Pothole Case, especially in Python programming, in which this convention is often used for naming variables. Illustratively, it may be rendered snake_case or pothole_case. When all-upper-case, it may be referred to as Screaming Snake Case (or SCREAMING_SNAKE_CASE).</p>
+									<p>Punctuation is removed and spaces are replaced by single underscores. Normally the letters share the same case &lpar;e.g. "UPPER_CASE_EMBEDDED_UNDERSCORE" or "lower_case_embedded_underscore"&rpar;, but the case can be mixed as well. The style may also be called Pothole Case, especially in Python programming, in which this convention is often used for naming variables. Illustratively, it may be rendered snake_case or pothole_case. When all-upper-case, it may be referred to as Screaming Snake Case &lpar;or SCREAMING_SNAKE_CASE&rpar;.</p>
 								</li>
 								<li>
 									<strong>Kebab Case:</strong>
 									<span> the-quick-brown-fox-jumps-over-the-lazy-dog</span>
-									<p>Similar to Snake Case, above, except hyphens rather than underscores are used to replace spaces (illustratively: kebab-case). It is also known as Spinal Case, Param Case, LISP Case, and Dash Case. If every word is capitalised, the style is known as Train Case (or TRAIN-CASE).</p>
+									<p>Similar to Snake Case, above, except hyphens rather than underscores are used to replace spaces &lpar;illustratively: kebab-case&rpar;. It is also known as Spinal Case, Param Case, LISP Case, and Dash Case. If every word is capitalised, the style is known as Train Case &lpar;or TRAIN-CASE&rpar;.</p>
 								</li>
 								<li>
 									<strong>Studly Caps:</strong>
