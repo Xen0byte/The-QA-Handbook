@@ -510,17 +510,19 @@
 														<li>When a developer needs more information on a defect from a QA person, they will mark it Resolved and set the Resolution to Need More Info.</li>
 													</ul>
 													<span>Several other values are available for the Resolution field, however these are less commonly used.</span>
+													<p></p>
 												</li>
 												<li>
 													<strong>Support Ticket ID:</strong>
 													<span>If a request for QA review includes a support ticket ID, then that ID needs to be copied over to the defect logged off the back of that request. More information about this is available in the section detailing the Requests For QA Review workflow.</span>
+													<p></p>
 												</li>
 												<li>
 													<strong>State Of Fix:</strong>
 													<span>The value of this field never needs to be set manually; it is controlled by an integration with GitLab, and the value will automatically be set to “Fix is on Development” when the fix for the defect has been merged to the development branch and to “Fix is on Development and Production” when the fix for the defect has been deployed to the production environment.</span>
+													<p></p>
 												</li>
 											</ul>
-											<p></p>
 											<img src="assets\img\04-workflows\03-logging-defects\09-custom-fields.png" alt="Logging Defects: Custom Fields" class="img-fluid img-container" />
 											<p></p>
 										</li>
@@ -551,6 +553,7 @@
 												<li>Using nouns instead of verbs. Examples: a&rpar; <s>the user is unable to login</s> the user is unable to log in; b&rpar; <s>the user is experiencing issues attempting to setup the configuration</s> the user is experiencing issues attempting to set up the configuration; c&rpar; <s>we will rollout a new version of the application</s> we will roll out a new version of the application;</li>
 												<li>Incorrectly capitalized acronyms or initialisms. Examples: a&rpar; <s>Json</s> JSON; b&rpar; <s>Asap</s> ASAP;</li>
 											</ul>
+											<p></p>
 										</li>
 										<li>
 											<strong>Punctuation:</strong>
@@ -560,10 +563,12 @@
 												<li>Using dashes for hyphens and vice versa. A hyphen &lpar;-&rpar; is a punctuation mark that’s used to join words or parts of words, whereas a dash &lpar;–&rpar; is longer than a hyphen and is commonly used to indicate a range or a pause</li>
 												<li>Using apostrophes in plural words. Examples: a&rpar; <s>SMS's</s> SMSs; b&rpar; <s>ID's</s> IDs;</li>
 											</ul>
+											<p></p>
 										</li>
 										<li>
 											<strong>Syntax:</strong>
 											<span>Syntax is essentially about what word comes before and after another word. Please make sure your sentences don't end up sounding like tongue twisters. English can be weird; it can be understood through tough thorough thought, though.</span>
+											<p></p>
 										</li>
 										<li>
 											<strong>Semantics:</strong>
@@ -578,9 +583,9 @@
 											</li>
 										</ul>
 										<span>I will end this section with a programming joke: A woman asks her husband, a programmer, “Could you please go shopping for me, and buy one carton of milk? And if they have eggs, please get six.” A short time later, the programmer comes back with six cartons of milk. His wife asks, “Why did you buy six cartons of milk?” to which the programmer replies, “They had eggs.”.</span>
+										<p></p>
 									</ul>
 								</li>
-								<p></p>
 								<li>
 									<h4>Comments</h4>
 									<p>While creating comments in targetprocess, it is possible to tag users or entities in the comment body.</p>
@@ -646,13 +651,14 @@
 								<li>
 									<strong>Component Integration Testing:</strong>
 									<span> Focuses on the interaction between the components of a system. For instance, in meddbase, the interaction between raising invoices and making payments can be classified as Component Integration Testing.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>System Integration Testing:</strong>
 									<span>Focuses on the interaction between the application under test and micro-services or other systems. Typically, all third-party integrations are covered by System Integration Testing. Examples of micro-services and of other systems that integrate with meddbase are Xero, SagePay and the PACS Service.</span>
+									<p></p>
 								</li>
 							</ul>
-							<p></p>
 							<img src="assets\img\05-information-library\01-levels-of-testing\02-integration-testing.png" alt="Information Library: Levels Of Testing: Integration Testing" class="img-fluid img-container" />
 							<p></p>
 							<p>Integration Testing can be performed in one of four ways:</p>
@@ -660,21 +666,24 @@
 								<li>
 									<strong>Big Bang:</strong>
 									<span> An approach to Integration Testing where all or most of the units are combined together and tested at one go. This approach is taken when the testing team receives the entire software in a bundle. So what is the difference between Big Bang Integration Testing and System Testing? The former tests only the interactions between the components while the latter tests the entire system.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Top-Down:</strong>
 									<span> An approach to Integration Testing where top-level units are tested first and lower-level units are tested step by step after that. This approach is taken when a top-down development approach is followed. Stubs are needed to simulate lower-level units which may not be available during the initial phases of testing.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Bottom-Up:</strong>
 									<span> An approach to Integration Testing where bottom-level units are tested first and upper-level units step by step after that. This approach is taken when a bottom-up development approach is followed. Drivers are needed to simulate higher-level units which may not be available during the initial phases of testing.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Hybrid/Sandwich:</strong>
 									<span> An approach to Integration Testing which is a combination of the Top-Down and Bottom-Up approaches.</span>
+									<p></p>
 								</li>
 							</ul>
-							<p></p>
 							<p>Test Stubs and Test Drivers act as substitutes to incomplete or missing components. They do not implement the entire programming logic of the components but just simulate data communication with the calling components. Stubs are called by the components under test, while Drivers call the components under test.</p>
 							<img src="assets\img\05-information-library\01-levels-of-testing\03-lack-of-integration-testing.webp" alt="Information Library: Levels Of Testing: Integration Testing: Lack Of Integration Testing" class="img-fluid img-container" />
 							<p></p>
@@ -699,6 +708,7 @@
 								<li>
 									<strong>Functional System Testing:</strong>
 									<span> This ensures that the system is performing all the functions that were defined in the software requirement specification.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Non-Functional System Testing:</strong>
@@ -741,29 +751,40 @@
 								<li>
 									<strong>User Acceptance Testing &lpar;UAT&rpar;:</strong>
 									<span> Is typically focused on validating the fitness for use of the system by intended users in a real or simulated operational environment. The main objective is building confidence that the users can use the system to meet their needs, fulfil requirements, and perform business processes with minimum difficulty, cost, and risk. There could be many user groups who will be using the software, and each group needs to be represented in UAT.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Contractual Acceptance Testing &lpar;CAT&rpar;:</strong>
 									<span> Is performed against a contract’s acceptance criteria for producing custom-developed software. Acceptance criteria should be defined when the parties agree to the contract. Contractual Acceptance Testing is often performed by users or by independent testers. The main objective of Contractual Acceptance Testing is building confidence that contractual compliance has been achieved.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Regulatory Acceptance Testing &lpar;RAT&rpar;:</strong>
 									<span> Is performed against any regulations that must be adhered to, such as government, legal, or safety regulations. Regulatory Acceptance Testing is often performed by users or by independent testers, sometimes with the results being witnessed or audited by regulatory agencies. The main objective of Regulatory Acceptance Testing is building confidence that regulatory compliance has been achieved.</span>
+									<p></p>
 								</li>
 								<li>
 									<strong>Operational Acceptance Testing &lpar;OAT&rpar;:</strong>
-									<span> Acceptance Testing of the system by Operations or Systems Administration staff is usually performed in a (simulated) production environment. The tests focus on operational aspects, and may include, but is not limited to, inspecting backup facilities, asserting the readiness for end-user training, analysis of disaster recovery plans, deployment/rollback simulations, user management, data load/import and migration tasks, performance testing, checks for security vulnerabilities, etc. The main objective of Operational Acceptance Testing is building confidence that the Operators or System Administrators can keep the system working properly for the users in the operational environment, even under exceptional or difficult conditions.</span>
-								</li>
-								<br>
-								<li>
-									<strong>Alpha Testing:</strong>
-									<span> Is usually carried out by the internal staff of the software development company. It’s done when the software is at the verge of completion, and it’s done at the developer’s site. Typically, the members of the project team do not participate in Alpha Testing, and instead this testing phase is conducted by other internal staff &lpar;e.g. members of the support team, or members of the development and/or QA teams that have not been involved in the project&rpar;.</span>
+									<span> Acceptance Testing of the system by Operations or Systems Administration staff is usually performed in a &lpar;simulated&rpar; production environment. The tests focus on operational aspects, and may include, but is not limited to, inspecting backup facilities, asserting the readiness for end-user training, analysis of disaster recovery plans, deployment/rollback simulations, user management, data load/import and migration tasks, performance testing, checks for security vulnerabilities, etc. The main objective of Operational Acceptance Testing is building confidence that the Operators or System Administrators can keep the system working properly for the users in the operational environment, even under exceptional or difficult conditions.</span>
+									<p></p>
 								</li>
 								<li>
-									<strong>Beta Testing:</strong>
-									<span> Otherwise known as Field Testing, is operational testing by potential and/or existing users/customers at an external site not otherwise involved with the developers, to determine whether or not a component or system satisfies the user/customer needs and fits within the business processes. Beta Testing is often employed as a form of External Acceptance Testing for Commercial Off-The-Shelf &lpar;COTS&rpar; software in order to acquire feedback from the market.</span>
+									<strong>Alpha/Beta Testing:</strong>
+									<span> Are typically used by developers of Commercial Off-The-Shelf &lpar;COTS&rpar; software who want to get feedback from potential or existing users, customers, and/or operators before the software product is put on the market.</span>
+									<p></p>
+									<p>Alpha Testing is performed at the developing organization’s site, not by the development team, but by potential or existing customers, and/or operators or an independent test team. Beta Testing is performed by potential or existing customers, and/or operators at their own locations. Beta Testing may come after Alpha Testing or may occur without any preceding Alpha Testing having occurred.</p>
+									<p>One objective of Alpha and Beta Testing is building confidence among potential or existing customers, and/or operators that they can use the system under normal, everyday conditions, and in the operational environment&lpar;s&rpar; to achieve their objectives with minimum difficulty, cost, and risk. Another objective may be the detection of defects related to the conditions and environment&lpar;s&rpar; in which the system will be used, especially when those conditions and environment&lpar;s&rpar; are difficult to replicate by the development team.</p>
 								</li>
 							</ul>
+							<p></p>
+							<p>Acceptance Testing is often the responsibility of the customers, business users, product owners, or operators of a system, and other stakeholders may be involved as well.</p>
+							<p>Acceptance Testing is often thought of as the last test level in a sequential development lifecycle, but it may also occur at other times, for example:</p>
+							<ul>
+								<li><span>Acceptance Testing of a COTS software product may occur when it is installed or integrated.</span></li>
+								<li><span>Acceptance Testing of a new functional enhancement or addition may occur before System Testing.</span></li>
+							</ul>
+							<p></p>
+							<p>In iterative development, project teams can employ various forms of Acceptance Testing during and at the end of each iteration, such as those focused on verifying a new feature against its acceptance criteria and those focused on validating that a new feature satisfies the users’ needs. In addition, Alpha Tests and Beta Tests may occur, either at the end of each iteration, after the completion of each iteration, or after a series of iterations. User Acceptance Tests, Operational Acceptance Tests, Regulatory Acceptance Tests, and Contractual Acceptance Tests also may occur, either at the close of each iteration, after the completion of each iteration, or after a series of iterations.</p>
 							<p></p>
 						</li>
 						<li id="5.2">
